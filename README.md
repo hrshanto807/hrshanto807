@@ -35,7 +35,7 @@ I specialize in building scalable SaaS platforms, POS systems, inventory managem
 
 ### 📫 Contact
 - GitHub: @hrshanto807
-- Email: your-email@example.com
+- Email: shantorhaman81@gmail.com.com
 
 ---
 
