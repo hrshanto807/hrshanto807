@@ -1,10 +1,10 @@
-# 👋 Hi, I'm Shanto
+# Hi, I'm Shanto
 
-## 🚀 Senior Software Developer | SaaS & Web Application Engineer
+## Senior Software Developer | SaaS & Web Application Engineer
 
 I specialize in building scalable SaaS platforms, POS systems, inventory management solutions, and modern business applications using Laravel, PHP, JavaScript, MySQL, and modern web technologies.
 
-### 👨‍💻 What I Do
+### What I Do
 - Build full-stack SaaS applications
 - Develop POS & Inventory Management Systems
 - Create modern admin dashboards & CMS platforms
@@ -12,7 +12,7 @@ I specialize in building scalable SaaS platforms, POS systems, inventory managem
 - API integration & system optimization
 - Multi-language & enterprise solutions
 
-### 🛠️ Tech Stack
+### Tech Stack
 - Laravel
 - PHP
 - JavaScript
@@ -21,31 +21,31 @@ I specialize in building scalable SaaS platforms, POS systems, inventory managem
 - REST APIs
 - Git & GitHub
 
-### 🌱 Currently Learning
+### Currently Learning
 - AI Integration for SaaS Applications
 - System Architecture & Scaling
 - DevOps & Cloud Deployment
 - Advanced Laravel Ecosystem
 
-### 💡 Open To Collaborate On
+### Open To Collaborate On
 - SaaS Products
 - Startup Projects
 - Business Automation Systems
 - Open Source Laravel Projects
 
-### 📫 Contact
+### Contact
 - GitHub: @hrshanto807
 - Email: shantorhaman81@gmail.com
 
 ---
 
-## ⚡ Featured Expertise
-✔ SaaS Development  
-✔ Inventory & POS Systems  
-✔ ERP Solutions  
-✔ CMS Development  
-✔ Multi-language Applications  
-✔ API Development  
+##  Featured Expertise
+ SaaS Development  
+ Inventory & POS Systems  
+ ERP Solutions  
+ CMS Development  
+ Multi-language Applications  
+ API Development  
 
 ---
 
