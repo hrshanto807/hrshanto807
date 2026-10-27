@@ -1,7 +1,5 @@
 # Hi, I'm Shanto (https://hrshanto.vercel.app/)
 
-# https://hrshanto-a2ex6mwmt-hrshanto807s-projects.vercel.app/
-
 ## Senior Software Developer | SaaS & Web Application Engineer
 
 I specialize in building scalable SaaS platforms, POS systems, inventory management solutions, and modern business applications using Laravel, PHP, JavaScript, MySQL, and modern web technologies.
