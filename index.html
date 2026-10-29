@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hasibur Rahman Shanto - Senior Full-Stack Software Developer specializing in Laravel, MySQL query optimization, Redis queues, high-concurrency systems, and WebRTC.">
+    <meta name="keywords" content="Hasibur Rahman Shanto, Laravel Developer, Senior Full Stack Developer, PHP, Redis, MySQL, WebRTC, Multi-tenant SaaS, Docker">
+    <meta name="author" content="Hasibur Rahman Shanto">
+    <meta name="theme-color" content="#070a12">
+    <title>Hasibur Rahman Shanto | Senior Backend & Full-Stack Engineer</title>
+    
+    <!-- Open Graph / LinkedIn / WhatsApp Rich Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hrshanto.vercel.app/">
+    <meta property="og:title" content="Hasibur Rahman Shanto | Senior Backend & Full-Stack Engineer">
+    <meta property="og:description" content="Senior Full-Stack Developer with 4+ years building distributed enterprise ERPs, high-throughput SaaS platforms, WebRTC media streaming, and low-latency systems.">
+    <meta property="og:image" content="https://hrshanto.vercel.app/assets/images/projects/inventory-pos/04_saas_dashboard.png">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hasibur Rahman Shanto | Senior Full-Stack Engineer">
+    <meta name="twitter:description" content="Enterprise ERPs, Multi-Tenant SaaS, and Real-Time Systems Architecture.">
+    <meta name="twitter:image" content="https://hrshanto.vercel.app/assets/images/projects/inventory-pos/04_saas_dashboard.png">
+    
+    <!-- Favicon (100% Self-Contained SVG, PNG & Legacy ICO) -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+    <!-- Custom Stylesheets (100% Self-Contained - Zero CDN) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+    <!-- 3D Mathematical Canvas Background Layer -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="site-wrapper">
+        <!-- Header / Navigation Bar -->
+        <header class="header">
+            <div class="container navbar">
+                <a href="#hero" class="nav-brand" aria-label="Hasibur Rahman Shanto Home">
+                    <div class="brand-logo-3d">
+                        <svg class="brand-logo-svg" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="navBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0b1220"/>
+                                    <stop offset="100%" stop-color="#030509"/>
+                                </linearGradient>
+                                <linearGradient id="navBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#06b6d4"/>
+                                    <stop offset="50%" stop-color="#6366f1"/>
+                                    <stop offset="100%" stop-color="#a855f7"/>
+                                </linearGradient>
+                                <linearGradient id="navSGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#22d3ee"/>
+                                    <stop offset="40%" stop-color="#38bdf8"/>
+                                    <stop offset="75%" stop-color="#818cf8"/>
+                                    <stop offset="100%" stop-color="#c084fc"/>
+                                </linearGradient>
+                                <radialGradient id="navCoreGlow" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.38"/>
+                                    <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                            <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#navBgGrad)" stroke="url(#navBorderGrad)" stroke-width="2.5"/>
+                            <circle cx="32" cy="32" r="22" fill="url(#navCoreGlow)"/>
+                            <path d="M 44 17 H 27 A 7.5 7.5 0 0 0 19.5 24.5 A 7.5 7.5 0 0 0 27 32 H 37 A 7.5 7.5 0 0 1 44.5 39.5 A 7.5 7.5 0 0 1 37 47 H 20" 
+                                  fill="none" 
+                                  stroke="url(#navSGrad)" 
+                                  stroke-width="7.5" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="mobile-menu-header">
+                        <span class="mobile-menu-tag">// SYSTEM NAVIGATION //</span>
+                        <span class="mobile-status-pill"><span class="pulse-dot"></span> ONLINE</span>
+                    </li>
+                    <li>
+                        <a href="#hero" class="nav-link active">
+                            <span class="nav-idx">01</span>
+                            <span class="nav-text">Home</span>
+                            <span class="nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#architecture" class="nav-link">
+                            <span class="nav-idx">02</span>
+                            <span class="nav-text">Architecture</span>
+                            <span class="nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">
+                            <span class="nav-idx">03</span>
+                            <span class="nav-text">Skills</span>
+                            <span class="nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav-link">
+                            <span class="nav-idx">04</span>
+                            <span class="nav-text">Projects</span>
+                            <span class="nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="nav-link">
+                            <span class="nav-idx">05</span>
+                            <span class="nav-text">Experience</span>
+                            <span class="nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">
+                            <span class="nav-idx">06</span>
+                            <span class="nav-text">Contact</span>
+                            <span class="nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-footer">
+                        <a href="assets/docs/Hasibur_Rahman_Shanto_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary mobile-cv-btn">
+                            <span>Download Official CV (PDF)</span>
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-8 4h16v-2H4v2z"/>
+                            </svg>
+                        </a>
+                        <div class="mobile-quick-links">
+                            <a href="https://wa.me/8801738450807" target="_blank" rel="noopener noreferrer" class="mobile-quick-item">WhatsApp: +880 1738-450807</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="assets/docs/Hasibur_Rahman_Shanto_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cv-btn">
+                        <span class="nav-cv-text">Hire Me (CV)</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-8 4h16v-2H4v2z"/>
+                        </svg>
+                    </a>
+                    <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation" aria-expanded="false">
+                        <span class="ham-box">
+                            <span class="ham-line ham-line-1"></span>
+                            <span class="ham-line ham-line-2"></span>
+                            <span class="ham-line ham-line-3"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-meta">
+                            <div class="pulse-indicator">
+                                <span class="pulse-dot"></span>
+                                <span class="pulse-text-desktop">SYSTEM OPERATIONAL | Available for High-Impact Roles</span>
+                                <span class="pulse-text-mobile">AVAILABLE FOR HIRE</span>
+                            </div>
+                        </div>
+
+                        <h1 class="hero-title">
+                            Hello, I'm <span class="text-gradient">Hasibur Rahman Shanto</span>
+                        </h1>
+
+                        <div class="hero-role">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                            <span>Full-Stack Software Developer & Systems Architect</span>
+                        </div>
+
+                        <p class="hero-desc">
+                            Full-Stack Software Engineer with 4+ years of production experience architecting 7+ enterprise software systems and delivering 50+ high-performance e-commerce and web applications. Specialized in Laravel core architectures, MySQL query tuning, Redis queues, WebRTC real-time media, and AI-accelerated microservices.
+                        </p>
+
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-primary">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 10l-4 4m0-4l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                                <span>Explore Flagship Projects</span>
+                            </a>
+                            <a href="assets/docs/Hasibur_Rahman_Shanto_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-8 4h16v-2H4v2z"/>
+                                </svg>
+                                <span>Open Official CV (PDF)</span>
+                            </a>
+                        </div>
+
+                        <div class="social-group">
+                            <a href="https://github.com/hrshanto807" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/hrsanto" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 0 0 1.45-1.45 1.45 1.45 0 0 0-1.45-1.45 1.45 1.45 0 0 0-1.45 1.45c0 .8.65 1.45 1.45 1.45m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:Shantorhaman81@gmail.com" class="social-link" aria-label="Direct Email">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </a>
+                            <a href="tel:+8801738450807" class="social-link" aria-label="Direct Phone">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3D Visual Avatar Chamber with Gyroscope & 3D Rotating Tech Cube -->
+                    <div class="hero-visual">
+                        <div class="gyro-chamber">
+                            <!-- Cohesive 3D Celestial Gyroscope Rings (All rings rotating in 3D harmony) -->
+                            <div class="gyro-ring-3d gyro-ring-cyan"></div>
+                            <div class="gyro-ring-3d gyro-ring-purple"></div>
+                            <div class="gyro-ring-3d gyro-ring-emerald"></div>
+
+                            <!-- Borderless 3D Avatar with Cosmic Glow -->
+                            <div class="avatar-stage-3d">
+                                <div class="avatar-cosmic-glow"></div>
+                                <img src="assets/images/shanto_avatar.png" alt="Hasibur Rahman Shanto" class="avatar-floating-img">
+                            </div>
+
+                            <!-- True 6-Sided 3D Rotating Cyber Cube -->
+                            <div class="scene-3d-cube">
+                                <div class="cube-3d">
+                                    <div class="cube-face cube-face-front">Docker</div>
+                                    <div class="cube-face cube-face-back">Laravel</div>
+                                    <div class="cube-face cube-face-right">Redis</div>
+                                    <div class="cube-face cube-face-left">MySQL</div>
+                                    <div class="cube-face cube-face-top">WebRTC</div>
+                                    <div class="cube-face cube-face-bottom">Vue.js</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Impact Metrics (Kinetic Counters) -->
+            <section class="metrics-section" id="metrics">
+                <div class="container">
+                    <div class="metrics-grid">
+                        <div class="metric-card tilt-card reveal-init">
+                            <div class="metric-value-wrap tilt-pop-lg">
+                                <span class="metric-number counter-val" data-target="4">0</span>
+                                <span class="metric-symbol">+</span>
+                            </div>
+                            <div class="metric-title tilt-pop-md">Years Experience</div>
+                            <div class="metric-desc">Senior Full-Stack & Systems Architecture</div>
+                        </div>
+
+                        <div class="metric-card tilt-card reveal-init">
+                            <div class="metric-value-wrap tilt-pop-lg">
+                                <span class="metric-number counter-val" data-target="7">0</span>
+                                <span class="metric-symbol">+</span>
+                            </div>
+                            <div class="metric-title tilt-pop-md">Enterprise Software</div>
+                            <div class="metric-desc">Production ERP, SaaS, POS & Result Engines</div>
+                        </div>
+
+                        <div class="metric-card tilt-card reveal-init">
+                            <div class="metric-value-wrap tilt-pop-lg">
+                                <span class="metric-number counter-val" data-target="50">0</span>
+                                <span class="metric-symbol">+</span>
+                            </div>
+                            <div class="metric-title tilt-pop-md">E-Commerce & Websites</div>
+                            <div class="metric-desc">High-Traffic Laravel Commercial Platforms</div>
+                        </div>
+
+                        <div class="metric-card tilt-card reveal-init">
+                            <div class="metric-value-wrap tilt-pop-lg">
+                                <span class="metric-number counter-val" data-target="42">0</span>
+                                <span class="metric-symbol">%</span>
+                            </div>
+                            <div class="metric-title tilt-pop-md">Latency Reduction</div>
+                            <div class="metric-desc">Redis Queues, Caching & DB Index Tuning</div>
+                        </div>
+
+                        <div class="metric-card tilt-card reveal-init">
+                            <div class="metric-value-wrap tilt-pop-lg">
+                                <span class="metric-number counter-val" data-target="99.9" data-float="true">0</span>
+                                <span class="metric-symbol">%</span>
+                            </div>
+                            <div class="metric-title tilt-pop-md">High Availability</div>
+                            <div class="metric-desc">Docker, Nginx & Automated CI/CD Workflows</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Architecture & Problems I Solve Section -->
+            <section class="section" id="architecture">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag scramble-trigger">Senior Engineering</span>
+                        <h2 class="section-title">Critical Architectural Problems I Solve</h2>
+                        <p class="section-subtitle">Real-world production engineering challenges tackled across high-volume platforms.</p>
+                    </div>
+
+                    <!-- 3D Interactive Architecture Pipeline Canvas -->
+                    <div class="arch-canvas-container tilt-card reveal-init">
+                        <canvas id="arch-3d-canvas"></canvas>
+                    </div>
+
+                    <div class="problems-grid">
+                        <!-- Problem 1 -->
+                        <div class="problem-card tilt-card reveal-init">
+                            <div class="problem-card-icon tilt-pop-lg">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3 class="problem-card-title tilt-pop-md">Slow Databases & Deadlocks</h3>
+                            <p class="problem-card-desc">
+                                Profiling heavy queries using EXPLAIN, designing composite indexes, eliminating N+1 eager loading bottlenecks, and resolving concurrency deadlock issues on busy MySQL tables.
+                            </p>
+                            <span class="problem-tech-tag">MySQL EXPLAIN • Composite Indexing</span>
+                        </div>
+
+                        <!-- Problem 2 -->
+                        <div class="problem-card tilt-card reveal-init">
+                            <div class="problem-card-icon tilt-pop-lg">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 class="problem-card-title tilt-pop-md">Heavy Reports & API Latency</h3>
+                            <p class="problem-card-desc">
+                                Offloading computational jobs, large Excel/PDF exports, and transactional notifications to asynchronous Laravel Queues and Redis Horizon workers, cutting API response times by 42%.
+                            </p>
+                            <span class="problem-tech-tag">Redis Horizon • Queue Routing</span>
+                        </div>
+
+                        <!-- Problem 3 -->
+                        <div class="problem-card tilt-card reveal-init">
+                            <div class="problem-card-icon tilt-pop-lg">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3 class="problem-card-title tilt-pop-md">Resilient & Safe Payments</h3>
+                            <p class="problem-card-desc">
+                                Implementing multi-gateway payment flows (Stripe, bKash, SSLCommerz) with cryptographic webhook signature verification, fraud prevention, and idempotency keys to eliminate double-charges.
+                            </p>
+                            <span class="problem-tech-tag">Idempotency Keys • Webhooks</span>
+                        </div>
+
+                        <!-- Problem 4 -->
+                        <div class="problem-card tilt-card reveal-init">
+                            <div class="problem-card-icon tilt-pop-lg">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3 class="problem-card-title tilt-pop-md">Low-Latency Real-Time Media</h3>
+                            <p class="problem-card-desc">
+                                1-on-1 WebRTC audio/video calling with custom signaling, ICE candidate negotiation, screen sharing, and real-time chat with presence tracking using Redis Pub/Sub and WebSockets.
+                            </p>
+                            <span class="problem-tech-tag">WebRTC • WebSockets • Redis Pub/Sub</span>
+                        </div>
+
+                        <!-- Problem 5 -->
+                        <div class="problem-card tilt-card reveal-init">
+                            <div class="problem-card-icon tilt-pop-lg">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3 class="problem-card-title tilt-pop-md">Multi-Tenant SaaS Isolation</h3>
+                            <p class="problem-card-desc">
+                                Architectural separation of tenant data through dedicated databases per company, dynamic subdomain routing, granular RBAC, and subscription tier-based feature flag controls.
+                            </p>
+                            <span class="problem-tech-tag">Database Isolation • Custom Subdomains</span>
+                        </div>
+
+                        <!-- Problem 6 -->
+                        <div class="problem-card tilt-card reveal-init">
+                            <div class="problem-card-icon tilt-pop-lg">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3 class="problem-card-title tilt-pop-md">Omnichannel Inventory Sync</h3>
+                            <p class="problem-card-desc">
+                                Matching and synchronizing inventory levels and orders in real-time across physical POS retail counters, multi-branch warehouses, and online stores to prevent overselling.
+                            </p>
+                            <span class="problem-tech-tag">Two-Way Sync • Real-Time Webhooks</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Skills Matrix -->
+            <section class="section" id="skills">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag scramble-trigger">Tech Stack</span>
+                        <h2 class="section-title">Core Competencies & Tools</h2>
+                        <p class="section-subtitle">Battle-tested tools and frameworks used across enterprise production environments.</p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <!-- Backend -->
+                        <div class="skill-category-card skill-card-backend tilt-card reveal-init">
+                            <div class="skill-cat-head">
+                                <div class="skill-cat-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-cat-title tilt-pop-md">Backend & Architecture</h3>
+                            </div>
+                            <div class="skills-pill-wrap">
+                                <span class="skill-pill">PHP (Core & OOP)</span>
+                                <span class="skill-pill">Laravel (Service Container / Eloquent)</span>
+                                <span class="skill-pill">Horizon & Queues</span>
+                                <span class="skill-pill">Events & Listeners</span>
+                                <span class="skill-pill">SOLID & Design Patterns</span>
+                                <span class="skill-pill">Repository & Service Patterns</span>
+                                <span class="skill-pill">Pennant Feature Flags</span>
+                                <span class="skill-pill">Legacy PHP Refactoring</span>
+                            </div>
+                        </div>
+
+                        <!-- Database & Caching -->
+                        <div class="skill-category-card skill-card-database tilt-card reveal-init">
+                            <div class="skill-cat-head">
+                                <div class="skill-cat-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-cat-title tilt-pop-md">Database & Caching</h3>
+                            </div>
+                            <div class="skills-pill-wrap">
+                                <span class="skill-pill">MySQL & PostgreSQL</span>
+                                <span class="skill-pill">EXPLAIN Query Profiling</span>
+                                <span class="skill-pill">Composite Indexing</span>
+                                <span class="skill-pill">Deadlock & Concurrency</span>
+                                <span class="skill-pill">Safe Production Migrations</span>
+                                <span class="skill-pill">Redis Cache & Horizon</span>
+                                <span class="skill-pill">Redis Pub/Sub</span>
+                                <span class="skill-pill">Multi-Tenant Isolation</span>
+                            </div>
+                        </div>
+
+                        <!-- Frontend & UI -->
+                        <div class="skill-category-card skill-card-frontend tilt-card reveal-init">
+                            <div class="skill-cat-head">
+                                <div class="skill-cat-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-cat-title tilt-pop-md">Frontend & API Integration</h3>
+                            </div>
+                            <div class="skills-pill-wrap">
+                                <span class="skill-pill">React & Next.js Integration</span>
+                                <span class="skill-pill">API Contracts & CORS</span>
+                                <span class="skill-pill">Vue.js & Inertia.js</span>
+                                <span class="skill-pill">Blade Templating</span>
+                                <span class="skill-pill">Alpine.js</span>
+                                <span class="skill-pill">JavaScript (ES6+)</span>
+                                <span class="skill-pill">Tailwind CSS</span>
+                                <span class="skill-pill">Responsive WebGL / Canvas</span>
+                            </div>
+                        </div>
+
+                        <!-- DevOps & Infrastructure -->
+                        <div class="skill-category-card skill-card-devops tilt-card reveal-init">
+                            <div class="skill-cat-head">
+                                <div class="skill-cat-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-cat-title tilt-pop-md">DevOps & Deployment</h3>
+                            </div>
+                            <div class="skills-pill-wrap">
+                                <span class="skill-pill">Docker & Docker Compose</span>
+                                <span class="skill-pill">Ubuntu Linux VPS</span>
+                                <span class="skill-pill">Nginx Reverse Proxy</span>
+                                <span class="skill-pill">GitHub Actions CI/CD</span>
+                                <span class="skill-pill">Supervisor Processes</span>
+                                <span class="skill-pill">Let's Encrypt SSL</span>
+                                <span class="skill-pill">Zero-Downtime Deployments</span>
+                                <span class="skill-pill">Multi-Region Branching</span>
+                            </div>
+                        </div>
+
+                        <!-- Integrations & APIs -->
+                        <div class="skill-category-card skill-card-integrations tilt-card reveal-init">
+                            <div class="skill-cat-head">
+                                <div class="skill-cat-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-cat-title tilt-pop-md">Integrations & Microservices</h3>
+                            </div>
+                            <div class="skills-pill-wrap">
+                                <span class="skill-pill">Node.js (NestJS / Express)</span>
+                                <span class="skill-pill">Stripe & bKash APIs</span>
+                                <span class="skill-pill">SSLCommerz</span>
+                                <span class="skill-pill">WebSockets & WebRTC</span>
+                                <span class="skill-pill">SMS Gateways</span>
+                                <span class="skill-pill">Courier Logistics APIs</span>
+                                <span class="skill-pill">OpenAI & Gemini APIs</span>
+                                <span class="skill-pill">RESTful API Versioning</span>
+                            </div>
+                        </div>
+
+                        <!-- Professional Practices -->
+                        <div class="skill-category-card skill-card-leadership tilt-card reveal-init">
+                            <div class="skill-cat-head">
+                                <div class="skill-cat-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-cat-title tilt-pop-md">Engineering & Leadership</h3>
+                            </div>
+                            <div class="skills-pill-wrap">
+                                <span class="skill-pill">AI & Agentic Coding (Cursor/Claude)</span>
+                                <span class="skill-pill">Team Leadership & Mentoring</span>
+                                <span class="skill-pill">Peer Code Reviews</span>
+                                <span class="skill-pill">OWASP Top 10 Security & RBAC</span>
+                                <span class="skill-pill">Automated PHPUnit Testing</span>
+                                <span class="skill-pill">Sanctum, Passport & JWT</span>
+                                <span class="skill-pill">Git Rebase / Cherry-Pick</span>
+                                <span class="skill-pill">End-to-End Production Ownership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Flagship Projects Section -->
+            <section class="section" id="projects">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag scramble-trigger">Flagship Systems</span>
+                        <h2 class="section-title">Featured Enterprise Projects</h2>
+                        <p class="section-subtitle">Scalable production platforms delivering real measurable business impact.</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Project 1: Inventory POS SaaS Platform -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="inventory-pos">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>PRODUCTION • SAAS ERP & POS [23 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/inventory-pos/04_saas_dashboard.png" alt="Inventory POS Multi-Tenant SaaS Platform Dashboard" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="saas"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">Multi-Tenant SaaS</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="inventory-pos" aria-label="Open Inventory POS Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Inventory POS – Multi-Tenant SaaS Platform</h3>
+                                <p class="project-desc">
+                                    Enterprise-grade multi-tenant platform featuring dedicated company database isolation, custom subdomains, touch barcode POS terminal, double-entry financial ledger, and SuperAdmin subscription monetization engine.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Automated company database provisioning, dynamic migrations & subdomain isolation</li>
+                                    <li>High-throughput touch barcode POS with split payments, cash drawer balancing & held bills</li>
+                                    <li>Double-entry general ledger, customer/vendor accounting & SuperAdmin MRR analytics</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel 11</span>
+                                    <span class="project-tech-item">Vue.js</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">Redis</span>
+                                    <span class="project-tech-item">Barcode POS</span>
+                                    <span class="project-tech-item">Multi-Tenant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Manufacturing Workflow ERP -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="manufacturing">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>PRODUCTION • FACTORY ERP [97 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/manufacturing/01_Authentication_and_Dashboard/02_Executive_Dashboard.png" alt="Apparel & Accessories Manufacturing ERP Executive Dashboard" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="sync"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">Industrial ERP</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="manufacturing" aria-label="Open Manufacturing ERP Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Apparel & Accessories Manufacturing ERP</h3>
+                                <p class="project-desc">
+                                    End-to-end industrial production software managing customer orders, multi-stage factory workflows (dyeing to sewing), inventory, and automated delivery challans.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Interactive executive dashboard tracking real-time order volume, production stages & gross revenue</li>
+                                    <li>Multi-stage factory pipeline from raw material requisition to dyeing, sewing, and inventory reconciliation</li>
+                                    <li>Automated delivery challan generation, printable invoices, employee attendance register & trial balance</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">Redis</span>
+                                    <span class="project-tech-item">Vue.js</span>
+                                    <span class="project-tech-item">Queue Workers</span>
+                                    <span class="project-tech-item">PDF Invoice Engine</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Construction Operations ERP -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="construction">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>PRODUCTION • KADAMATI ERP [5 MODULES]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/construction/equipment.jpeg" alt="Kadamati Construction Management ERP" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="sync"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">Logistics & Site Operations</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="construction" aria-label="Open Construction Operations Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Kadamati ERP – Construction Operations & Logistics</h3>
+                                <p class="project-desc">
+                                    Comprehensive enterprise system managing heavy equipment telemetry, BNBC structural safety audits, multi-site biometric labor payroll, and contractor running bills.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Heavy machinery tracking (Tower Cranes, Excavators) with maintenance alerts & telemetry</li>
+                                    <li>BNBC compliance checklists, concrete defect photo logs & Non-Conformance Reports (NCR)</li>
+                                    <li>Daily biometric labor attendance across 12 sites and ৳25.5 Cr contractor bill reconciliations</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">Redis</span>
+                                    <span class="project-tech-item">REST APIs</span>
+                                    <span class="project-tech-item">Docker</span>
+                                    <span class="project-tech-item">Fleet GPS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: EduTab Result Engine -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="school">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>PRODUCTION • ACADEMIC RESULT ENGINE [7 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/school/dashboard.png" alt="EduTab Academic ERP and Result Engine" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="edutab"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">School & Result Engine</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="school" aria-label="Open School Management Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">EduTab – High-Concurrency Result Engine</h3>
+                                <p class="project-desc">
+                                    High-throughput academic institution management platform featuring high-concurrency automated transcript generation, multi-session exam grading rules, fee ledger reconciliation, and automated SMS notification dispatch.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Batch marksheet generation engine rendering 10,000+ transcripts simultaneously with zero memory bloat</li>
+                                    <li>Multi-tiered Redis caching and chunked background queue workers reducing peak database load by 68%</li>
+                                    <li>Automated GPA/CGPA grading rules, institutional broadsheet compilation, student admissions & fee ledgers</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">Redis</span>
+                                    <span class="project-tech-item">Queue Workers</span>
+                                    <span class="project-tech-item">PDF Generation</span>
+                                    <span class="project-tech-item">GitHub Actions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: Order Management & Automated Invoice Engine -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="invoice">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>PRODUCTION • INVOICE ENGINE & BILLING [10 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/invoice/04_dashboard_overview.png" alt="Order Management and Automated Tax Invoice Engine" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="sync"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">High-Concurrency ERP</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="invoice" aria-label="Open Invoice Engine Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Order Management & Automated Tax Invoice Engine</h3>
+                                <p class="project-desc">
+                                    Enterprise-grade order processing and high-speed invoice generation engine built to handle high peak sales and regulatory compliance.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Asynchronous Redis queue workers generating thousands of VAT/GST invoices per minute (85ms avg render)</li>
+                                    <li>Dynamic thermal receipt & A4 formats with cryptographic QR code verification and tax compliance</li>
+                                    <li>Real-time order state machine with inventory reservation, payment webhooks, and automatic dispatch</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">Redis Queues</span>
+                                    <span class="project-tech-item">Node.js (Puppeteer)</span>
+                                    <span class="project-tech-item">Docker</span>
+                                    <span class="project-tech-item">REST APIs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: Multi-Vendor E-Commerce Platform -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="multivendor">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>PRODUCTION • MULTI-VENDOR MARKETPLACE [14 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/multivendor/desktop.png" alt="Multi-Vendor E-Commerce Platform" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="saas"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">Marketplace & FinTech</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="multivendor" aria-label="Open Multi-Vendor Marketplace Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Multi-Vendor E-Commerce Platform & Marketplace</h3>
+                                <p class="project-desc">
+                                    Scalable multi-tenant marketplace platform with vendor store management, catalog moderation, automated 8.5% commission splits, multi-vendor split cart checkout, and automated payment gateway payouts.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Independent vendor portal with store customization, inventory catalogs, variant SKU builder & order fulfillment</li>
+                                    <li>Automated commission split calculation (8.5%) and instant merchant payout ledger via Stripe Connect & bKash</li>
+                                    <li>Unified shopping cart supporting multi-vendor split consignments, automated shipping quotes & courier booking</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">Redis</span>
+                                    <span class="project-tech-item">Stripe Connect</span>
+                                    <span class="project-tech-item">bKash</span>
+                                    <span class="project-tech-item">Vue.js</span>
+                                    <span class="project-tech-item">Multi-Tenant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 7: Omnichannel E-Commerce & Retail POS Sync -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="pos">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>PRODUCTION • JEWELLERY RETAIL POS [11 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/pos/04_pos_cart_active.png" alt="Asian Jewellery House Retail POS and Inventory Interface" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="saas"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">Retail & FinTech</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="pos" aria-label="Open POS Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Asian Jewellery House – Retail POS & Inventory ERP</h3>
+                                <p class="project-desc">
+                                    Specialized high-value retail POS terminal with live dynamic gold/silver rates, barcode inventory tracking, split payments, and instant sales memo generation.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Real-time dynamic gold karat rate configurator (24K, 22K, 21K, 18K) updating product pricing storewide</li>
+                                    <li>High-throughput barcode scanning with making-charges auto-calculation, stone deduction, and VAT</li>
+                                    <li>Split payments (Cash, Card, bKash) and thermal barcode jewelry tag printing integration</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">Tailwind CSS</span>
+                                    <span class="project-tech-item">Alpine.js</span>
+                                    <span class="project-tech-item">Thermal Print</span>
+                                    <span class="project-tech-item">Barcode POS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 8: Alif Super Shop & Model Pharma Platform -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="alifsuper">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>LIVE ECOSYSTEM • WEB APP & ADMIN POS [29 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/alifsuper/desktop.png" alt="Alif Super Shop and Model Pharma E-Commerce Platform" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="sync"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">E-Commerce & Retail POS</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="alifsuper" aria-label="Open Alif Super Shop Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Alif Super Shop & Model Pharma (Web App & POS ERP)</h3>
+                                <p class="project-desc">
+                                    Full-cycle retail grocery & digital pharmacy ecosystem built for WanIT Ltd, integrating customer web storefront, certified Model Pharma drug search, counter POS terminal, and back-office ERP inventory.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Customer Web App (Views 01–09): Live SKU catalog, Model Pharma portal, cart & zone-based delivery calculation</li>
+                                    <li>Admin ERP & POS (Views 10–29): Barcode cashier terminal, multi-warehouse inventory, procurement & P&L statements</li>
+                                    <li>Automated Cash-on-Delivery (COD) reconciliation, vendor expense ledger, and real-time revenue analytics</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">PHP</span>
+                                    <span class="project-tech-item">MySQL</span>
+                                    <span class="project-tech-item">POS System</span>
+                                    <span class="project-tech-item">REST APIs</span>
+                                    <span class="project-tech-item">JavaScript</span>
+                                    <span class="project-tech-item">Linux VPS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 9: Real-Time WebRTC Calling & Live Chat -->
+                        <div class="project-card tilt-card reveal-init">
+                            <div class="project-screen-box project-screen-clickable" data-gallery-trigger="webrtc">
+                                <div class="project-screen-badge">
+                                    <span class="rec-dot"></span>
+                                    <span>LIVE STREAM • WEBRTC ICE [5 VIEWS]</span>
+                                </div>
+                                <div class="project-screen-hud-right">CLICK TO EXPAND</div>
+                                <img src="assets/images/projects/webrtc/desktop.png" alt="Real-Time WebRTC Video Calling and Chat Platform" class="project-screen-img" loading="lazy">
+                                <canvas class="project-sim-canvas" data-type="webrtc"></canvas>
+                            </div>
+                            <div class="project-card-header">
+                                <span class="project-badge-type tilt-pop-lg">Real-Time Media</span>
+                                <button class="project-link-btn project-gallery-btn" data-gallery-trigger="webrtc" aria-label="Open WebRTC Gallery">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title tilt-pop-md">Real-Time WebRTC Video & Live Chat</h3>
+                                <p class="project-desc">
+                                    Ultra-low latency (0.8ms) peer-to-peer audio/video streaming and collaboration engine featuring custom WebSocket signaling, adaptive STUN/TURN ICE candidate gathering, 1080p 60FPS screen sharing, and end-to-end encrypted messaging.
+                                </p>
+                                <ul class="project-highlights">
+                                    <li>Custom WebSocket signaling & SFU failover supporting 1-on-1 calls, screen sharing & multi-party architecture sync</li>
+                                    <li>Opus 48kHz stereo audio pipeline with hardware acoustic echo cancellation (AEC3) & RNN noise suppression</li>
+                                    <li>Real-time collaborative chat channels, typing indicators, presence tracking & live ICE network telemetry</li>
+                                </ul>
+                                <div class="project-tech-stack">
+                                    <span class="project-tech-item">Laravel</span>
+                                    <span class="project-tech-item">WebRTC</span>
+                                    <span class="project-tech-item">WebSockets</span>
+                                    <span class="project-tech-item">Socket.io</span>
+                                    <span class="project-tech-item">Redis Pub/Sub</span>
+                                    <span class="project-tech-item">STUN/TURN</span>
+                                    <span class="project-tech-item">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Experience Timeline -->
+            <section class="section" id="experience">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag scramble-trigger">Career Journey</span>
+                        <h2 class="section-title">Work Experience</h2>
+                        <p class="section-subtitle">Consistent delivery of enterprise software across leading tech companies.</p>
+                    </div>
+
+                    <div class="timeline-wrap">
+                        <!-- Role 1 -->
+                        <div class="timeline-item reveal-init">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content tilt-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-role">Senior Software Developer</h3>
+                                    <span class="timeline-period timeline-current"><span class="live-pulse-dot"></span>2025 – Present</span>
+                                </div>
+                                <div class="timeline-company">WanIT BD LTD • Dhaka, Bangladesh</div>
+                                <ul class="timeline-bullets">
+                                    <li>Lead backend development for high-scale enterprise ERP, inventory, and accounting systems; designed high-concurrency MySQL schemas with optimized transaction isolation.</li>
+                                    <li>Offloaded heavy report generation and data exports to Redis queue workers, reducing API response times by 42%.</li>
+                                    <li>Implemented secure payment gateways with webhook signature verification, fraud prevention, and idempotency controls.</li>
+                                    <li>Configured Dockerized production environments, managed Nginx on Linux VPS, and architected zero-downtime CI/CD deployment pipelines using GitHub Actions.</li>
+                                    <li>Championed coding standards, conducted peer code reviews, and mentored junior team members in writing clean, performant Laravel code.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Role 2 -->
+                        <div class="timeline-item reveal-init">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content tilt-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-role">Software Developer</h3>
+                                    <span class="timeline-period">2023 – 2025</span>
+                                </div>
+                                <div class="timeline-company">Deelko LTD • Dhaka, Bangladesh</div>
+                                <ul class="timeline-bullets">
+                                    <li>Engineered retail POS software featuring barcode integration, multi-branch stock tracking, low-stock reorder triggers, and receipt printing.</li>
+                                    <li>Built ERP modules to automate workflows, improve operational efficiency, and streamline inventory auditing across branches.</li>
+                                    <li>Developed an alumni directory system with real-time filtering and infinite scrolling using Laravel, Alpine.js, and Tailwind CSS.</li>
+                                    <li>Optimized legacy MySQL database queries through strategic indexing and eager loading techniques.</li>
+                                    <li>Maintained containerized staging and production Linux VPS servers, executing routine performance monitoring.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Role 3 -->
+                        <div class="timeline-item reveal-init">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content tilt-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-role">Laravel Developer</h3>
+                                    <span class="timeline-period">2022 – 2023</span>
+                                </div>
+                                <div class="timeline-company">Softvence Agency • Dhaka, Bangladesh</div>
+                                <ul class="timeline-bullets">
+                                    <li>Built web applications for international clients, including booking portals, job marketplaces, and e-commerce platforms with RBAC support.</li>
+                                    <li>Designed versioned REST APIs secured with Laravel Sanctum and JWT for web and mobile frontends.</li>
+                                    <li>Collaborated in international Agile teams with sprint planning, Git branching strategies, and automated PHPUnit testing.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="section section-education" id="education">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag scramble-trigger">Academic Background</span>
+                        <h2 class="section-title">Education & Credentials</h2>
+                    </div>
+
+                    <div class="timeline-wrap">
+                        <div class="timeline-content tilt-card reveal-init">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">Diploma in Electrical Engineering</h3>
+                                <span class="timeline-period">Graduated 2021</span>
+                            </div>
+                            <div class="timeline-company">Patuakhali Polytechnic Institute • Barisal, Bangladesh</div>
+                            <p class="timeline-bullets">
+                                Strong foundation in circuit logic, electrical systems, and computing fundamentals that transitioned into high-performance software engineering and systems architecture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section" id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag scramble-trigger">Direct Communications</span>
+                        <h2 class="section-title">Let's Discuss Your Next Architecture</h2>
+                        <p class="section-subtitle">Available for full-time senior roles, high-concurrency systems design, and consulting.</p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <!-- Direct Email Card -->
+                        <div class="contact-method-card tilt-card reveal-init">
+                            <div class="contact-method-head">
+                                <div class="contact-method-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-label">Direct Email</div>
+                                    <div class="contact-method-value tilt-pop-md">Shantorhaman81@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-actions-row">
+                                <a href="mailto:Shantorhaman81@gmail.com" class="contact-action-btn">
+                                    <span>Send Direct Email</span>
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </a>
+                                <button class="contact-copy-btn" data-copy="Shantorhaman81@gmail.com" title="Copy email address" aria-label="Copy email address">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Phone / WhatsApp Card -->
+                        <div class="contact-method-card tilt-card reveal-init">
+                            <div class="contact-method-head">
+                                <div class="contact-method-icon contact-icon-green tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-label">Phone & WhatsApp</div>
+                                    <div class="contact-method-value tilt-pop-md">+880 1738-450807</div>
+                                </div>
+                            </div>
+                            <div class="contact-actions-row">
+                                <a href="https://wa.me/8801738450807" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                                    <span>Chat on WhatsApp</span>
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </a>
+                                <button class="contact-copy-btn" data-copy="+8801738450807" title="Copy phone number" aria-label="Copy phone number">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Official CV Featured Card -->
+                        <div class="contact-method-card cv-highlight-card tilt-card reveal-init">
+                            <div class="contact-method-head">
+                                <div class="contact-method-icon contact-icon-cyan tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M12 18l-4-4h2.5v-3h3v3H16z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-label">Official Documentation</div>
+                                    <div class="contact-method-value tilt-pop-md">Complete Resume & CV (PDF)</div>
+                                </div>
+                            </div>
+                            <a href="assets/docs/Hasibur_Rahman_Shanto_Resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-action-btn cv-highlight-btn">
+                                <span>Open Full CV in New Tab</span>
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- LinkedIn Profile Card -->
+                        <div class="contact-method-card tilt-card reveal-init">
+                            <div class="contact-method-head">
+                                <div class="contact-method-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 0 0 1.45-1.45 1.45 1.45 0 0 0-1.45-1.45 1.45 1.45 0 0 0-1.45 1.45c0 .8.65 1.45 1.45 1.45m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-label">Professional Network</div>
+                                    <div class="contact-method-value tilt-pop-md">linkedin.com/in/hrsanto</div>
+                                </div>
+                            </div>
+                            <a href="https://linkedin.com/in/hrsanto" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                                <span>Connect on LinkedIn</span>
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- GitHub Profile Card -->
+                        <div class="contact-method-card tilt-card reveal-init">
+                            <div class="contact-method-head">
+                                <div class="contact-method-icon contact-icon-gold tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-label">Source Code Hub</div>
+                                    <div class="contact-method-value tilt-pop-md">github.com/hrshanto807</div>
+                                </div>
+                            </div>
+                            <a href="https://github.com/hrshanto807" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                                <span>Browse Repositories</span>
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="contact-method-card tilt-card reveal-init">
+                            <div class="contact-method-head">
+                                <div class="contact-method-icon tilt-pop-lg">
+                                    <svg class="icon-svg" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-label">Current Base</div>
+                                    <div class="contact-method-value tilt-pop-md">Dhaka, Bangladesh</div>
+                                </div>
+                            </div>
+                            <div class="contact-status-badge">
+                                <span class="pulse-dot"></span>
+                                <span>Open for Worldwide Remote & Relocation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>
+                    &copy; <span id="current-year"></span> Hasibur Rahman Shanto. Engineered with Pure Web Standards.
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/hrshanto807" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                    <a href="https://linkedin.com/in/hrsanto" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                    <a href="#hero" class="footer-link">Back to Top ↑</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Floating Cyber Back to Top HUD Button -->
+    <button id="back-to-top-btn" class="cyber-back-to-top" title="Back to Top" aria-label="Back to Top">
+        <svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+    </button>
+
+    <!-- Global Cyber HUD Toast Notification Container -->
+    <div id="cyber-toast" class="cyber-toast" aria-live="polite"></div>
+
+    <!-- Interactive Cyber Project Gallery Modal -->
+    <div id="project-gallery-modal" class="cyber-gallery-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="gallery-backdrop" id="gallery-backdrop"></div>
+        <div class="gallery-container" id="gallery-container">
+            <!-- Top Bar - Cyber HUD Header -->
+            <div class="gallery-topbar">
+                <div class="gallery-topbar-primary">
+                    <div class="gallery-title-wrap">
+                        <span class="gallery-tag">// LIVE PRODUCTION CAPTURE //</span>
+                        <h3 id="gallery-title" class="gallery-title">Project Name</h3>
+                    </div>
+                    <div class="gallery-topbar-controls">
+                        <span id="gallery-counter" class="gallery-counter">01 / 04</span>
+                        <button id="gallery-fullscreen-btn" class="gallery-icon-btn" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                        </button>
+                        <button id="gallery-close-btn" class="gallery-close-btn" aria-label="Close Gallery">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-topbar-secondary">
+                    <div class="gallery-badges-row">
+                        <span id="gallery-device-badge" class="gallery-device-badge">Desktop View</span>
+                        <span id="gallery-scroll-hint" class="gallery-scroll-hint">↕ SCROLL DOWN TO EXPLORE FULL PAGE</span>
+                    </div>
+                    <div class="gallery-slide-actions">
+                        <button id="gallery-viewmode-btn" class="gallery-control-btn" title="Toggle Full Width / Fit Height" aria-label="Toggle Fit Height">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M4 8V4m0 0h4M4 4l5 5m11-5h-4m4 0v4m0-4l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                            <span id="gallery-viewmode-label">Fit Height</span>
+                        </button>
+                        <a id="gallery-open-raw" class="gallery-icon-btn" href="#" target="_blank" rel="noopener noreferrer" title="Open Full Resolution in New Tab" aria-label="Open Full Resolution in New Tab">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Slide Viewport -->
+            <div class="gallery-stage">
+                <button id="gallery-prev-btn" class="gallery-nav-arrow gallery-prev" aria-label="Previous Slide">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </button>
+
+                <div class="gallery-slide-wrap" id="gallery-slide-wrap">
+                    <img id="gallery-main-img" src="" alt="Project Preview" class="gallery-main-img">
+                </div>
+
+                <button id="gallery-next-btn" class="gallery-nav-arrow gallery-next" aria-label="Next Slide">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Bottom Thumbnails & Caption -->
+            <div class="gallery-bottom-bar">
+                <div class="gallery-thumbnails" id="gallery-thumbnails">
+                    <!-- Dynamically populated thumbnails -->
+                </div>
+                <div class="gallery-caption" id="gallery-caption">
+                    Production architecture & real-time operational interface.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript Modules (100% Self-Contained - Zero CDN) -->
+    <script src="assets/js/canvas-3d.js"></script>
+    <script src="assets/js/architecture-3d.js"></script>
+    <script src="assets/js/cinematic.js"></script>
+    <script src="assets/js/tilt.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/scramble.js"></script>
+    <script src="assets/js/counters.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+</body>
+</html>
