@@ -1,110 +1,119 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:070a12,55:1d4ed8,100:22d3ee&height=230&section=header&text=Hasibur+Rahman+Shanto&fontSize=46&fontColor=ffffff&fontAlignY=38&desc=Senior+Software+Developer+%7C+SaaS+%26+Web+Application+Engineer&descSize=17&descColor=cbd5e1&descAlignY=60&animation=fadeIn" width="100%" alt="Hasibur Rahman Shanto" />
+<a href="https://hrshanto.vercel.app/" target="_blank">
+  <img src="assets/images/readme-banner.svg" alt="Hasibur Rahman Shanto - Senior Full-Stack Software Developer" width="100%" />
+</a>
+
+<br/><br/>
 
 <a href="https://hrshanto.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=900&color=22D3EE&center=true&vCenter=true&width=720&height=40&lines=Laravel+MySQL+and+Redis+at+production+scale;Multi+tenant+SaaS+ERP+and+POS+systems;Real+time+platforms+with+WebRTC+and+WebSockets;Fixing+slow+queries+and+heavy+reports" alt="typing intro" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=45&lines=%E2%9A%A1+Senior+Full-Stack+Engineer+%7C+Laravel%2C+MySQL+%26+Redis+at+Scale;%E2%9A%A1+Multi-Tenant+SaaS+ERP+%26+High-Concurrency+POS+Engines;%E2%9A%A1+Real-Time+Systems+with+WebRTC+%26+WebSockets;%E2%9A%A1+Optimized+SQL+Queries+%E2%80%A2+42%25+Latency+Cut+%E2%80%A2+68%25+DB+Load+Drop;%E2%9A%A1+Building+Resilient+Microservices+%26+Automated+Pipelines" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<img src="https://img.shields.io/badge/STATUS-AVAILABLE_FOR_HIRE-22c55e?style=for-the-badge&labelColor=070a12" alt="available for hire" />
+<img src="https://img.shields.io/badge/●_SYSTEM_OPERATIONAL-AVAILABLE_FOR_HIRE-10b981?style=for-the-badge&labelColor=070a12" alt="System Status" />
+<a href="https://hrshanto.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/⚡_EXPLORE_3D_PORTFOLIO-hrshanto.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white&labelColor=070a12" alt="Visit 3D Portfolio" />
+</a>
 
 <br/><br/>
 
-<a href="https://hrshanto.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-hrshanto.vercel.app-2563eb?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-<a href="https://linkedin.com/in/hrsanto"><img src="https://img.shields.io/badge/LinkedIn-hrsanto-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:shantorhaman81@gmail.com"><img src="https://img.shields.io/badge/Email-shantorhaman81@gmail.com-0891b2?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://wa.me/8801738450807"><img src="https://img.shields.io/badge/WhatsApp-Chat-16a34a?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
-<a href="https://hrshanto.vercel.app/assets/docs/Hasibur_Rahman_Shanto_Resume.pdf"><img src="https://img.shields.io/badge/Resume-Download_PDF-1e293b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume" /></a>
+<!-- Performance Metrics Bar -->
+<img src="https://img.shields.io/badge/PRODUCTION_EXP-4%2B_YEARS-6366f1?style=for-the-badge&labelColor=070a12" alt="Experience" />
+<img src="https://img.shields.io/badge/ENTERPRISE_SYSTEMS-7%2B_SHIPPED-06b6d4?style=for-the-badge&labelColor=070a12" alt="Enterprise Systems" />
+<img src="https://img.shields.io/badge/WEB_APPS-50%2B_DEPLOYED-3b82f6?style=for-the-badge&labelColor=070a12" alt="Web Apps" />
+<br/>
+<img src="https://img.shields.io/badge/API_LATENCY_CUT-42%25_FASTER-10b981?style=for-the-badge&labelColor=070a12" alt="Latency Cut" />
+<img src="https://img.shields.io/badge/PEAK_DB_LOAD-68%25_REDUCED-22d3ee?style=for-the-badge&labelColor=070a12" alt="DB Load Cut" />
+<img src="https://img.shields.io/badge/BATCH_ENGINE-10K%2B_PER_RUN-818cf8?style=for-the-badge&labelColor=070a12" alt="Batch Scale" />
 
 </div>
 
 <br/>
 
-I'm Shanto, a backend focused developer from Dhaka. For the last 4+ years I've been building the software businesses actually run on: ERP, POS, multi tenant SaaS and real time systems, mostly with Laravel, MySQL and Redis.
+```bash
+┌──(shanto㉿production)-[~/system/telemetry]
+└─$ sysctl --status --metrics
 
-I like the unglamorous problems. A report that takes 40 seconds to load. A table that deadlocks at 6pm when every branch is checking out. A payment webhook that fires twice. That's usually where I do my best work.
+● Identity     : Hasibur Rahman Shanto // Senior Backend & Full-Stack Systems Engineer (4+ Years)
+● Core Focus   : Multi-Tenant SaaS, Concurrency Tuning, High-Throughput POS, Real-Time WebRTC
+● Proven Stats : 42% API Latency Reduction (WanIT) | 68% Peak MySQL Load Elimination (EduTab)
+● Architecture : Laravel 11, Redis Horizon Clusters, MySQL 8 InnoDB, Docker Microservices
+● Live Engine  : https://hrshanto.vercel.app [SYSTEM OPERATIONAL]
+```
 
 <br/>
+
+### ⚡ Engineering Philosophy & Core Focus
+
+I'm **Hasibur Rahman Shanto**, a Full-Stack Software Engineer based in Dhaka with **4+ years of hands-on production experience** building and scaling 7+ enterprise software systems and delivering 50+ high-performance web applications.
+
+I specialize in the unglamorous, mission-critical engineering challenges:
+* A complex financial ledger report taking 45 seconds to generate
+* High-volume MySQL tables deadlocking during peak checkout rushes
+* Payment webhooks that double-fire during sporadic network drops
+* Unindexed queries causing memory exhaustion and database lock escalations
+
+---
+
+### 🛠️ Key Architectural Pillars
+
+- **01 // Multi-Tenant SaaS Isolation:** Database-per-tenant architecture, dynamic subdomains, automated tenant migrations, strict tenant context switching, and plan-based feature gates.
+- **02 // Query Profiling & Deadlock Elimination:** MySQL `EXPLAIN` execution plans, composite indexes, removing Eloquent N+1 loops, and pessimistic locking to avoid concurrency deadlocks.
+- **03 // Asynchronous Queue Pipelines:** Redis Horizon worker clusters, prioritizing heavy PDF generations, chunked imports, automated dispatchers, and exponential backoff retries. Slashing API latency by **42%** at WanIT.
+- **04 // Financial Integrity & Idempotency:** Stripe Connect, bKash Merchant API, and SSLCommerz with strict HMAC webhook signature verification, atomic DB transactions, and idempotency keys.
+- **05 // Real-Time Signaling & WebRTC:** Custom WebSocket signaling server, STUN/TURN NAT traversal, low-latency screen sharing, and Redis Pub/Sub live presence sync.
+- **06 // Omnichannel POS & Inventory Sync:** Distributed multi-counter barcode POS synchronized with central warehouses to eliminate overselling under high concurrency.
+
+---
+
+### 🚀 Featured Production Systems
+
+| System | Architecture & Engineering Highlights | Core Stack |
+| :--- | :--- | :--- |
+| **BNSMSoft (Multi-Tenant SaaS ERP)** | Database-per-tenant isolation, dynamic subdomains, double-entry ledger, barcode POS, subscription billing | `Laravel 11` `Vue.js` `MySQL` `Redis` |
+| **EduTab Result & Transcript Engine** | Generates 10,000+ transcripts in a single batch. Chunked queue workers reduced peak database load by **68%** | `Laravel` `Redis Horizon` `Queue Workers` |
+| **High-Throughput Invoicing Engine** | Thousands of VAT/GST compliant tax invoices per minute with automated delivery, QR validation & payment webhooks | `Laravel` `Redis` `Puppeteer` `Docker` |
+| **Multi-Vendor Marketplace & Escrow** | Independent vendor portals, 8.5% automated commission splitting, split-cart checkouts, and automated payouts | `Laravel` `Stripe Connect` `bKash API` |
+| **Manufacturing Supply Chain ERP** | End-to-end textile factory pipeline (dyeing to sewing), QC inspection, delivery challans, and payroll accounting | `Laravel` `MySQL` `Vue.js` `Docker` |
+| **Kadamati Construction Logistics ERP** | Heavy equipment tracking, fuel logs, site safety compliance audits, and biometric attendance across 12 active sites | `Laravel` `MySQL` `Docker` `Nginx` |
+| **Real-Time Video Collaboration & Chat** | Custom WebRTC signaling server, STUN/TURN traversal, screen sharing, and live presence tracking over WebSockets | `Laravel` `WebRTC` `Socket.io` `Redis` |
+
+> 💡 **Explore interactive 3D demos, telemetry monitors, and full architectural write-ups on my portfolio:**  
+> **[hrshanto.vercel.app](https://hrshanto.vercel.app/)**
+
+---
+
+### 💻 Technical Stack & Arsenal
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Experience-4%2B_years-2563eb?style=for-the-badge&labelColor=070a12" alt="experience" />
-<img src="https://img.shields.io/badge/Enterprise_systems-7%2B-3b82f6?style=for-the-badge&labelColor=070a12" alt="systems" />
-<img src="https://img.shields.io/badge/Web_apps_shipped-50%2B-0ea5e9?style=for-the-badge&labelColor=070a12" alt="apps" />
-<br/>
-<img src="https://img.shields.io/badge/Faster_API_responses-42%25-06b6d4?style=for-the-badge&labelColor=070a12" alt="api" />
-<img src="https://img.shields.io/badge/DB_load_cut_at_peak-68%25-22d3ee?style=for-the-badge&labelColor=070a12" alt="db load" />
-<img src="https://img.shields.io/badge/Transcripts_in_one_batch-10K%2B-67e8f9?style=for-the-badge&labelColor=070a12" alt="transcripts" />
+<img src="https://skillicons.dev/icons?i=php,laravel,mysql,postgres,redis,vue,nextjs,js,ts,tailwind,bootstrap,docker,nginx,linux,githubactions,git,nodejs&theme=dark&perline=8" alt="tech stack" />
 
 </div>
 
 <br/>
 
-## What I actually work on
+- **Backend & Core Architecture:** PHP 8.3+, Laravel (10–12), Eloquent ORM, Redis Horizon, Queue Workers, Sanctum, JWT, Repository & Service Patterns, SOLID principles.
+- **Databases & Caching:** MySQL 8, PostgreSQL, Redis Cache & Pub/Sub, Query Optimization (`EXPLAIN`), Composite Indexing, Zero-Downtime Schema Migrations.
+- **Real-Time & Financials:** WebRTC (Peer-to-Peer, Screen Share), WebSockets / Socket.io, Stripe Connect, bKash Merchant API, SSLCommerz.
+- **DevOps & Infrastructure:** Docker, Docker Compose, Nginx Reverse Proxy, Ubuntu / Linux VPS, GitHub Actions CI/CD.
+- **Modern AI Workflows:** OpenAI & Gemini APIs, Cursor, Claude AI, AI-assisted development workflows.
 
-**Slow queries and deadlocks.** I profile with EXPLAIN, add composite indexes, kill N+1 queries and fix concurrency issues on busy MySQL tables.
+---
 
-**Heavy reports and slow APIs.** Exports, PDFs and notifications go to Redis Horizon workers. At WanIT that cut API response times by 42%.
+### 📬 Let's Connect & Build Together
 
-**Payments that don't double charge.** Stripe, bKash and SSLCommerz with webhook signature checks and idempotency keys.
+Whether you need a senior engineer to architect a new SaaS platform, scale an existing Laravel/MySQL infrastructure, or eliminate stubborn database performance bottlenecks:
 
-**Multi tenant SaaS.** A separate database per company, dynamic subdomains, RBAC and plan based feature flags.
-
-**Real time.** 1 on 1 WebRTC calls with custom signaling, screen sharing and live chat over WebSockets and Redis Pub/Sub.
-
-**Inventory that stays in sync.** POS counters, warehouses and online stores updating each other so nothing gets oversold.
-
-<br/>
-
-## Projects I'm proud of
-
-| Project | What it does | Built with |
-|:--|:--|:--|
-| **Inventory POS (multi tenant SaaS)** | Isolated company databases, subdomains, barcode POS, double entry ledger, subscription billing | Laravel 11, Vue.js, MySQL, Redis |
-| **EduTab result engine** | Generates 10,000+ transcripts in one batch. Chunked queue workers cut peak DB load by 68% | Laravel, Redis, Queue Workers |
-| **Order and tax invoice engine** | Thousands of VAT/GST invoices per minute with QR verification and payment webhooks | Laravel, Redis, Puppeteer, Docker |
-| **Multi vendor marketplace** | Vendor portals, 8.5% commission splits, split cart checkout, automated payouts | Laravel, Stripe Connect, bKash |
-| **Manufacturing ERP** | Factory pipeline from dyeing to sewing, delivery challans, attendance, trial balance | Laravel, MySQL, Vue.js |
-| **Kadamati construction ERP** | Equipment tracking, safety audits and biometric payroll across 12 sites | Laravel, MySQL, Docker |
-| **Real time video and chat** | Custom signaling, STUN/TURN, screen sharing, presence tracking | Laravel, WebRTC, Socket.io |
-
-Screenshots and full write ups are on my portfolio: **[hrshanto.vercel.app](https://hrshanto.vercel.app/)**
+- 🌐 **3D Portfolio:** [hrshanto.vercel.app](https://hrshanto.vercel.app/)  
+- 📧 **Direct Email:** [shantorhaman81@gmail.com](mailto:shantorhaman81@gmail.com)  
+- 💬 **WhatsApp:** [+880 1738 450807](https://wa.me/8801738450807)  
 
 <br/>
-
-## Stack
 
 <div align="center">
-
-<img src="https://skillicons.dev/icons?i=php,laravel,mysql,postgres,redis,vue,nextjs,js,tailwind,bootstrap,docker,nginx,linux,githubactions,git,nodejs&theme=dark&perline=8" alt="tech stack" />
-
-</div>
-
-<br/>
-
-**Backend:** PHP, Laravel, Eloquent, Horizon and Queues, Sanctum, JWT, SOLID, Repository and Service patterns
-**Data:** MySQL, PostgreSQL, Redis cache and Pub/Sub, EXPLAIN tuning, safe production migrations
-**Realtime and payments:** WebRTC, WebSockets, Socket.io, Stripe, bKash, SSLCommerz
-**DevOps:** Docker, Nginx, Ubuntu VPS, GitHub Actions, zero downtime deploys
-**Also:** OpenAI and Gemini APIs, AI assisted coding with Cursor and Claude, code reviews, mentoring
-
-<br/>
-
-
-
-## Let's talk
-
-If you need someone to design a backend, fix a slow system or ship a SaaS product end to end, message me. I'm open to senior roles and remote work worldwide.
-
-**Email:** [shantorhaman81@gmail.com](mailto:shantorhaman81@gmail.com)
-**WhatsApp:** [+880 1738 450807](https://wa.me/8801738450807)
-**Portfolio:** [hrshanto.vercel.app](https://hrshanto.vercel.app/)
-**LinkedIn:** [linkedin.com/in/hrsanto](https://linkedin.com/in/hrsanto)
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22d3ee,45:1d4ed8,100:070a12&height=110&section=footer&text=Code.+Build.+Scale.+Repeat.&fontSize=18&fontColor=ffffff&fontAlignY=65" width="100%" alt="footer" />
-
+  <img src="https://img.shields.io/badge/SYSTEM-OPERATIONAL-10b981?style=for-the-badge&labelColor=070a12" alt="System Operational" />
+  <p><em>“Code. Build. Scale. Repeat.”</em></p>
 </div>
