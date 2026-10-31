@@ -103,17 +103,34 @@ I specialize in the unglamorous, mission-critical engineering challenges:
 
 ---
 
-### 📬 Let's Connect & Build Together
+### 📬 Let's Connect & Build High-Impact Systems
 
 Whether you need a senior engineer to architect a new SaaS platform, scale an existing Laravel/MySQL infrastructure, or eliminate stubborn database performance bottlenecks:
-
-- 🌐 **3D Portfolio:** [hrshanto.vercel.app](https://hrshanto.vercel.app/)  
-- 📧 **Direct Email:** [shantorhaman81@gmail.com](mailto:shantorhaman81@gmail.com)  
-- 💬 **WhatsApp:** [+880 1738 450807](https://wa.me/8801738450807)  
 
 <br/>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/SYSTEM-OPERATIONAL-10b981?style=for-the-badge&labelColor=070a12" alt="System Operational" />
-  <p><em>“Code. Build. Scale. Repeat.”</em></p>
+
+<a href="https://hrshanto.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/⚡_EXPLORE_3D_PORTFOLIO-hrshanto.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white&labelColor=070a12" alt="3D Portfolio" />
+</a>
+&nbsp;
+<a href="mailto:shantorhaman81@gmail.com">
+  <img src="https://img.shields.io/badge/📧_DIRECT_EMAIL-shantorhaman81%40gmail.com-06b6d4?style=for-the-badge&logo=gmail&logoColor=white&labelColor=070a12" alt="Direct Email" />
+</a>
+&nbsp;
+<a href="https://wa.me/8801738450807" target="_blank">
+  <img src="https://img.shields.io/badge/💬_WHATSAPP-Chat_Directly-10b981?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=070a12" alt="WhatsApp" />
+</a>
+
+<br/><br/>
+
+<a href="https://hrshanto.vercel.app/" target="_blank">
+  <img src="assets/images/readme-footer.svg" alt="Code. Build. Scale. Repeat. - Hasibur Rahman Shanto" width="100%" />
+</a>
+
+<br/>
+
+<sub>© 2026 Hasibur Rahman Shanto • High-Throughput Distributed Architecture</sub>
+
 </div>
