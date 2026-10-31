@@ -45,47 +45,60 @@
 
 <br/>
 
-### ⚡ Engineering Philosophy & Core Focus
+---
 
-I'm **Hasibur Rahman Shanto**, a Full-Stack Software Engineer based in Dhaka with **4+ years of hands-on production experience** building and scaling 7+ enterprise software systems and delivering 50+ high-performance web applications.
+### ⚡ // 01 • ENGINEERING DIRECTIVE & FOCUS
 
-I specialize in the unglamorous, mission-critical engineering challenges:
-* A complex financial ledger report taking 45 seconds to generate
-* High-volume MySQL tables deadlocking during peak checkout rushes
-* Payment webhooks that double-fire during sporadic network drops
-* Unindexed queries causing memory exhaustion and database lock escalations
+> **"I build and scale the invisible, mission-critical infrastructure businesses rely on every single second."**  
+> *Full-Stack Software Engineer based in Dhaka with 4+ years of production experience architecting 7+ enterprise systems and deploying 50+ high-concurrency web applications.*
+
+<br/>
+
+| Bottleneck Scenario | Engineering Intervention & Result |
+| :--- | :--- |
+| ⏱️ **45s+ Heavy Financial Reports** | Offloaded to chunked **Redis Horizon worker clusters** with streaming data buffers. |
+| 🔒 **Peak Checkout MySQL Deadlocks** | Eliminated table locks using **composite indexing** and atomic **pessimistic row locking**. |
+| 💳 **Sporadic Double-Charge Webhooks** | Implemented **idempotency keys** with atomic DB transaction locks & HMAC signature verification. |
+| 📉 **Database Memory & CPU Spikes** | Profiled execution plans with **`EXPLAIN`**, refactored N+1 Eloquent loops, and pruned scans. |
+
+<br/>
 
 ---
 
-### 🛠️ Key Architectural Pillars
+### 🛠️ // 02 • SYSTEM ARCHITECTURAL PILLARS
 
-- **01 // Multi-Tenant SaaS Isolation:** Database-per-tenant architecture, dynamic subdomains, automated tenant migrations, strict tenant context switching, and plan-based feature gates.
-- **02 // Query Profiling & Deadlock Elimination:** MySQL `EXPLAIN` execution plans, composite indexes, removing Eloquent N+1 loops, and pessimistic locking to avoid concurrency deadlocks.
-- **03 // Asynchronous Queue Pipelines:** Redis Horizon worker clusters, prioritizing heavy PDF generations, chunked imports, automated dispatchers, and exponential backoff retries. Slashing API latency by **42%** at WanIT.
-- **04 // Financial Integrity & Idempotency:** Stripe Connect, bKash Merchant API, and SSLCommerz with strict HMAC webhook signature verification, atomic DB transactions, and idempotency keys.
-- **05 // Real-Time Signaling & WebRTC:** Custom WebSocket signaling server, STUN/TURN NAT traversal, low-latency screen sharing, and Redis Pub/Sub live presence sync.
-- **06 // Omnichannel POS & Inventory Sync:** Distributed multi-counter barcode POS synchronized with central warehouses to eliminate overselling under high concurrency.
+| 🏢 Multi-Tenant SaaS Isolation | ⚡ Query Tuning & Deadlock Rescue |
+| :--- | :--- |
+| **Database-per-tenant architecture** with dynamic subdomains, automated zero-downtime tenant migrations, tenant context switching, and plan-based feature flags. | Deep profiling using MySQL **`EXPLAIN`**, composite indexes, removing N+1 Eloquent relationships, and tuning row locks to prevent concurrency deadlocks. |
+| **🚀 Asynchronous Queue Pipelines** | **🔐 Financial Integrity & Idempotency** |
+| **Redis Horizon worker clusters** prioritizing heavy PDF generation, chunked imports, and automated dispatchers. Slashed API response times by **42%** at WanIT. | Stripe Connect, bKash, and SSLCommerz integrations with strict **HMAC webhook verification**, atomic DB transactions, and idempotency keys. |
+| **📹 Real-Time WebRTC Media & State** | **📦 Omnichannel POS & Stock Sync** |
+| Custom WebSocket signaling server, **STUN/TURN NAT traversal**, low-latency screen sharing, and Redis Pub/Sub live presence tracking. | Distributed multi-counter **barcode POS synchronized with central warehouses** using row locks to eliminate overselling under high concurrency. |
+
+<br/>
 
 ---
 
-### 🚀 Featured Production Systems
+### 🚀 // 03 • PRODUCTION SYSTEMS SHOWCASE
 
-| System | Architecture & Engineering Highlights | Core Stack |
+| System & Domain | Architecture & Engineering Highlights | Core Stack |
 | :--- | :--- | :--- |
-| **BNSMSoft (Multi-Tenant SaaS ERP)** | Database-per-tenant isolation, dynamic subdomains, double-entry ledger, barcode POS, subscription billing | `Laravel 11` `Vue.js` `MySQL` `Redis` |
-| **EduTab Result & Transcript Engine** | Generates 10,000+ transcripts in a single batch. Chunked queue workers reduced peak database load by **68%** | `Laravel` `Redis Horizon` `Queue Workers` |
-| **High-Throughput Invoicing Engine** | Thousands of VAT/GST compliant tax invoices per minute with automated delivery, QR validation & payment webhooks | `Laravel` `Redis` `Puppeteer` `Docker` |
-| **Multi-Vendor Marketplace & Escrow** | Independent vendor portals, 8.5% automated commission splitting, split-cart checkouts, and automated payouts | `Laravel` `Stripe Connect` `bKash API` |
-| **Manufacturing Supply Chain ERP** | End-to-end textile factory pipeline (dyeing to sewing), QC inspection, delivery challans, and payroll accounting | `Laravel` `MySQL` `Vue.js` `Docker` |
-| **Kadamati Construction Logistics ERP** | Heavy equipment tracking, fuel logs, site safety compliance audits, and biometric attendance across 12 active sites | `Laravel` `MySQL` `Docker` `Nginx` |
-| **Real-Time Video Collaboration & Chat** | Custom WebRTC signaling server, STUN/TURN traversal, screen sharing, and live presence tracking over WebSockets | `Laravel` `WebRTC` `Socket.io` `Redis` |
+| 🏢 **BNSMSoft**<br/><sub>Multi-Tenant SaaS ERP</sub> | Database-per-tenant isolation, dynamic subdomains, double-entry ledger, barcode POS, subscription billing | `Laravel 11` `Vue.js`<br/>`MySQL` `Redis` |
+| 🎓 **EduTab Engine**<br/><sub>High-Concurrency Results</sub> | Generates 10,000+ transcripts in a single batch. Chunked queue workers reduced peak database load by **68%** | `Laravel` `Redis Horizon`<br/>`Queue Workers` |
+| 🧾 **Invoicing Engine**<br/><sub>Tax & Compliance Engine</sub> | Thousands of VAT/GST compliant tax invoices per minute with automated delivery, QR validation & payment webhooks | `Laravel` `Redis`<br/>`Puppeteer` `Docker` |
+| 🛒 **Multi-Vendor Hub**<br/><sub>Marketplace & Escrow</sub> | Independent vendor portals, 8.5% automated commission splitting, split-cart checkouts, and automated payouts | `Laravel` `Stripe Connect`<br/>`bKash API` |
+| 🏭 **Manufacturing ERP**<br/><sub>Supply Chain Pipeline</sub> | End-to-end textile factory pipeline (dyeing to sewing), QC inspection, delivery challans, and payroll accounting | `Laravel` `MySQL`<br/>`Vue.js` `Docker` |
+| 🏗️ **Kadamati Logistics**<br/><sub>Construction ERP</sub> | Heavy equipment tracking, fuel logs, site safety compliance audits, and biometric attendance across 12 active sites | `Laravel` `MySQL`<br/>`Docker` `Nginx` |
+| 📹 **WebRTC Meet & Collab**<br/><sub>Real-Time Video Platform</sub> | Custom WebRTC signaling server, STUN/TURN traversal, screen sharing, and live presence tracking over WebSockets | `Laravel` `WebRTC`<br/>`Socket.io` `Redis` |
 
-> 💡 **Explore interactive 3D demos, telemetry monitors, and full architectural write-ups on my portfolio:**  
+> 💡 **Explore live 3D demos, system telemetry monitors, and full architectural write-ups on my portfolio:**  
 > **[hrshanto.vercel.app](https://hrshanto.vercel.app/)**
 
+<br/>
+
 ---
 
-### 💻 Technical Stack & Arsenal
+### 💻 // 04 • TECHNICAL STACK & ARSENAL
 
 <div align="center">
 
@@ -95,15 +108,19 @@ I specialize in the unglamorous, mission-critical engineering challenges:
 
 <br/>
 
-- **Backend & Core Architecture:** PHP 8.3+, Laravel (10–12), Eloquent ORM, Redis Horizon, Queue Workers, Sanctum, JWT, Repository & Service Patterns, SOLID principles.
-- **Databases & Caching:** MySQL 8, PostgreSQL, Redis Cache & Pub/Sub, Query Optimization (`EXPLAIN`), Composite Indexing, Zero-Downtime Schema Migrations.
-- **Real-Time & Financials:** WebRTC (Peer-to-Peer, Screen Share), WebSockets / Socket.io, Stripe Connect, bKash Merchant API, SSLCommerz.
-- **DevOps & Infrastructure:** Docker, Docker Compose, Nginx Reverse Proxy, Ubuntu / Linux VPS, GitHub Actions CI/CD.
-- **Modern AI Workflows:** OpenAI & Gemini APIs, Cursor, Claude AI, AI-assisted development workflows.
+| Layer | Technologies & Architectural Methodologies |
+| :--- | :--- |
+| ⚙️ **Core Backend** | PHP 8.3+, Laravel 10–12, Eloquent ORM, Redis Horizon, Queue Workers, Sanctum, JWT, Repository & Service Patterns, SOLID Principles |
+| 🗄️ **Databases & Cache** | MySQL 8 InnoDB, PostgreSQL, Redis Cache & Pub/Sub, `EXPLAIN` Query Profiling, Composite Indexing, Zero-Downtime Migrations |
+| ⚡ **Realtime & Payments** | WebRTC (P2P Mesh, Screen Share), WebSockets / Socket.io, Stripe Connect, bKash Merchant API, SSLCommerz |
+| 🐳 **DevOps & Cloud** | Docker, Docker Compose, Nginx Reverse Proxy, Ubuntu / Linux VPS, GitHub Actions CI/CD Pipelines |
+| 🤖 **AI & Modern Workflow** | OpenAI & Gemini APIs, Cursor, Claude AI, Automated System Telemetry & Testing Workflows |
+
+<br/>
 
 ---
 
-### 📬 Let's Connect & Build High-Impact Systems
+### 📬 // 05 • LET'S CONNECT & BUILD HIGH-IMPACT SYSTEMS
 
 Whether you need a senior engineer to architect a new SaaS platform, scale an existing Laravel/MySQL infrastructure, or eliminate stubborn database performance bottlenecks:
 
