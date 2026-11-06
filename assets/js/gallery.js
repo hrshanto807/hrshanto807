@@ -1153,58 +1153,128 @@
             ]
         },
         'invoice': {
-            title: 'Automated Invoice Generator & Billing Management System',
-            caption: 'Enterprise financial management platform with multi-step invoice wizard, real-time tax calculation, printable PDF documents, and client ledger.',
+            title: 'Automated Invoice Generator & Automotive Billing ERP',
+            caption: 'Enterprise financial management platform with 4-step invoice wizard, refundable core charge tracking, RMA returns engine, state-compliant Virginia 6% tax audit, and high-fidelity printable PDF documents.',
             slides: [
                 {
-                    src: 'assets/images/projects/invoice/04_dashboard_overview.png',
-                    device: 'Financial & Invoice Overview Dashboard',
-                    desc: 'Real-time billing analytics, revenue flow, overdue invoice alerts, and fast navigation to billing workflows.'
+                    src: 'assets/images/projects/invoice/02_dashboard.png',
+                    device: '1. Executive Operations & Billing Dashboard',
+                    desc: 'Real-time billing analytics, settled revenue flow ($29k+), active automotive order pipelines, receivables aging, and instant navigation.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/05_invoices_ledger_table.png',
-                    device: 'Invoices Master Ledger & Status Pipeline',
-                    desc: 'Comprehensive invoice register with paid/pending status tags, search filters, and quick action menus.'
+                    src: 'assets/images/projects/invoice/04_invoices_all.png',
+                    device: '2. Invoices Master Register & Tabbed Pipeline',
+                    desc: 'Multi-status invoice ledger featuring quick filter tabs (Paid, Partial, Unpaid, Void) with real-time balance calculations.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/06_modal_invoice_detail_view.png',
-                    device: 'Detailed Invoice Breakdown Modal',
-                    desc: 'Line-item audit modal with itemized descriptions, quantity, unit pricing, discounts, and tax computation.'
+                    src: 'assets/images/projects/invoice/09_invoices_detail_modal.png',
+                    device: '3. Granular Invoice Inspection Modal',
+                    desc: 'Quick audit modal displaying line-item part descriptions, VIN numbers, core deposits, warranty terms, and sales tax.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/08_invoice_wizard_step1_metadata.png',
-                    device: 'Creation Wizard: Step 1 (Metadata & Due Dates)',
-                    desc: 'Issue dates, due dates, currency selection, custom purchase order numbers, and invoice numbering scheme.'
+                    src: 'assets/images/projects/invoice/10_invoices_record_payment_modal.png',
+                    device: '4. Split-Settlement Payment Recording Modal',
+                    desc: 'Instant payment capture supporting partial allocations across Credit Card, Bank Check, or Cash with auto-reconciled balances.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/09_invoice_wizard_step2_customer.png',
-                    device: 'Creation Wizard: Step 2 (Client & Billing Details)',
-                    desc: 'Typeahead customer search, auto-filled billing addresses, tax registration numbers, and client notes.'
+                    src: 'assets/images/projects/invoice/11_invoices_share_email_modal.png',
+                    device: '5. Automated Direct Email Dispatch',
+                    desc: 'One-click transactional email gateway sending branded PDF invoices, payment receipts, and delivery tracking directly to clients.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/10_invoice_wizard_step3_products_table.png',
-                    device: 'Creation Wizard: Step 3 (Products & Line Items)',
-                    desc: 'Dynamic product row additions, automatic subtotal calculations, and customizable tax rates.'
+                    src: 'assets/images/projects/invoice/12_invoices_share_whatsapp_modal.png',
+                    device: '6. WhatsApp PDF & Quick Link Dispatch',
+                    desc: 'Instant WhatsApp messaging integration with pre-filled order summaries, encrypted payment links, and downloadable PDFs.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/11_invoice_wizard_step4_finalize.png',
-                    device: 'Creation Wizard: Step 4 (Final Review & Discounts)',
-                    desc: 'Review summary, discount applications, shipping fees, terms and conditions, and instant publishing.'
+                    src: 'assets/images/projects/invoice/14_invoice_create_step1.png',
+                    device: '7. Creation Wizard: Step 1 (Metadata & Suffixes)',
+                    desc: 'Auto-incrementing invoice numbers, customer PO/RO references, sales specialist attribution, and transactional date/time stamps.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/12_printable_invoice_paper_document.png',
-                    device: 'Official Printable Paper Invoice Document',
-                    desc: 'High-fidelity formatted invoice ready for print, PDF export, and verified corporate client distribution.'
+                    src: 'assets/images/projects/invoice/15_invoice_create_step2.png',
+                    device: '8. Creation Wizard: Step 2 (Client CRM & Delivery Route)',
+                    desc: 'Typeahead customer directory lookup, dual Bill-To/Ship-To addresses, customer VIN recording, and courier route selection.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/15_client_profile_360_offcanvas.png',
-                    device: 'Client 360° Profile & Transaction Drawer',
-                    desc: 'Slide-out client directory showing lifetime value, outstanding balance, and full invoice transaction history.'
+                    src: 'assets/images/projects/invoice/16_invoice_create_step3.png',
+                    device: '9. Creation Wizard: Step 3 (Parts Catalog & Warranties)',
+                    desc: 'Granular parts line items, refundable core charges, pallet/freight surcharges, and Gold+ 12-month mechanical warranty options.'
                 },
                 {
-                    src: 'assets/images/projects/invoice/22_financial_tax_reports.png',
-                    device: 'Financial Tax & Revenue Reports',
-                    desc: 'Automated VAT/Tax breakdown, monthly collection reports, and exportable financial audits.'
+                    src: 'assets/images/projects/invoice/17_invoice_create_item_modal.png',
+                    device: '10. Quick Part Add & Interchange Modal',
+                    desc: 'Modal for adding custom automotive parts, donor vehicle notes (e.g., W/TURBOS), shelf bin coordinates, and pricing on the fly.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/18_invoice_create_step4.png',
+                    device: '11. Creation Wizard: Step 4 (Tax, Settlement & Signature)',
+                    desc: 'Automated Virginia 6% tax computation, tax-exempt wholesale resale toggle (0%), and authorized digital signature stamp embedding.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/25_invoice_print_sheet.png',
+                    device: '12. Official Printable A4 Tax Invoice Document',
+                    desc: 'High-fidelity formatted invoice featuring Code-128 barcode, customer VIN, itemized parts, warranty terms, and legal tax compliance.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/27_invoice_public_view.png',
+                    device: '13. Public Client Verification Portal',
+                    desc: 'Customer-facing secure online view where clients can review itemized billing, verify warranty coverage, and settle outstanding balances.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/28_clients_table.png',
+                    device: '14. Master Client & Dealership Directory',
+                    desc: 'Centralized CDMS client database displaying corporate tax IDs, direct phone contacts, primary ship-to locations, and account health.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/30_clients_profile_offcanvas.png',
+                    device: '15. Client 360° Profile & Transaction Drawer',
+                    desc: 'Slide-out client directory showing lifetime value, outstanding balance, credit terms, and full historical invoice ledgers.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/32_client_statement_page.png',
+                    device: '16. Client Financial Statement of Account',
+                    desc: 'Comprehensive statement listing chronological invoice debits, payment credits, running balances, and exportable statement reports.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/33_parts_table.png',
+                    device: '17. Automotive Parts Inventory & Shelf Bin Locations',
+                    desc: 'Inventory catalog featuring OEM stock numbers, vehicle donor interchange comments, warehouse bin/shelf locations, and core charges.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/36_payments_table.png',
+                    device: '18. Financial Payments & Allocations Ledger',
+                    desc: 'Comprehensive payment audit log tracking check numbers, card authorizations, allocation timestamps, and cashier IDs.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/38_returns_table.png',
+                    device: '19. RMA & Parts Returns Pipeline',
+                    desc: 'Audited return management dashboard tracking customer RMA requests, returned part inspection states, and approved credit memos.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/39_returns_process_wizard.png',
+                    device: '20. Return & Refund Processing Wizard',
+                    desc: 'Step-by-step return workflow linking original invoice line items, calculating dynamic restocking fees, and issuing payouts.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/42_returns_print_credit_slip.png',
+                    device: '21. Official Printable Credit Memo Slip',
+                    desc: 'Standardized printable credit slip with restocking fee breakdowns, refunded tax adjustments, and customer acknowledgment lines.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/46_reports_tab_sales.png',
+                    device: '22. Commonwealth of Virginia 6% Sales Tax Audit',
+                    desc: 'Automated tax code classification (Taxable Code A vs Out-of-State Exempt Code 0), gross invoiced sales, and receivables aging report.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/49_reports_tab_receivables.png',
+                    device: '23. Accounts Receivable Aging Analytics',
+                    desc: 'Financial risk dashboard categorizing aging receivables across 30, 60, and 90+ day buckets with customer collection prioritisation.'
+                },
+                {
+                    src: 'assets/images/projects/invoice/54_roles_matrix.png',
+                    device: '24. Granular RBAC System Roles & Permissions',
+                    desc: 'Security matrix controlling role permissions across Admin, Manager, and Sales Specialist for invoicing, returns, and discounts.'
                 }
             ]
         }

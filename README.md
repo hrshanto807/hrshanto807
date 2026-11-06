@@ -85,7 +85,7 @@
 | :--- | :--- | :--- |
 | 🏢 **BNSMSoft**<br/><sub>Multi-Tenant SaaS ERP</sub> | Database-per-tenant isolation, dynamic subdomains, double-entry ledger, barcode POS, subscription billing | `Laravel 11` `Vue.js`<br/>`MySQL` `Redis` |
 | 🎓 **EduTab Engine**<br/><sub>High-Concurrency Results</sub> | Generates 10,000+ transcripts in a single batch. Chunked queue workers reduced peak database load by **68%** | `Laravel` `Redis Horizon`<br/>`Queue Workers` |
-| 🧾 **Invoicing Engine**<br/><sub>Tax & Compliance Engine</sub> | Thousands of VAT/GST compliant tax invoices per minute with automated delivery, QR validation & payment webhooks | `Laravel` `Redis`<br/>`Puppeteer` `Docker` |
+| 🧾 **Invoicing & Tax ERP**<br/><sub>Order & Tax Invoice Engine</sub> | 4-stage order wizard, Code-128 barcode A4 PDFs, RMA returns with restocking fees & Virginia 6% tax audit | `Laravel 11` `Livewire`<br/>`MySQL` `Redis` `Puppeteer` |
 | 🛒 **Multi-Vendor Hub**<br/><sub>Marketplace & Escrow</sub> | Independent vendor portals, 8.5% automated commission splitting, split-cart checkouts, and automated payouts | `Laravel` `Stripe Connect`<br/>`bKash API` |
 | 🏭 **Manufacturing ERP**<br/><sub>Supply Chain Pipeline</sub> | End-to-end textile factory pipeline (dyeing to sewing), QC inspection, delivery challans, and payroll accounting | `Laravel` `MySQL`<br/>`Vue.js` `Docker` |
 | 🏗️ **Kadamati Logistics**<br/><sub>Construction ERP</sub> | Heavy equipment tracking, fuel logs, site safety compliance audits, and biometric attendance across 12 active sites | `Laravel` `MySQL`<br/>`Docker` `Nginx` |
