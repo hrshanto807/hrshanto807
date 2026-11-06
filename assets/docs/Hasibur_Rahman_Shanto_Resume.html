@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hasibur Rahman Shanto - Senior Full-Stack Software Developer</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    font-size: 9.6px;
+    line-height: 1.4;
+  }
+  .page {
+    width: 794px;
+    height: 1123px;
+    max-height: 1123px;
+    margin: 0 auto;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    page-break-inside: avoid;
+    box-sizing: border-box;
+    padding: 14px 26px 12px 26px;
+  }
+  @media screen {
+    body {
+      background: #cbd5e1;
+      padding: 20px 0;
+    }
+    .page {
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+    }
+  }
+  @media print {
+    body {
+      background: #ffffff;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+
+  /* ================= PAGE 1 ================= */
+  .p1-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2.5px solid #0f172a;
+    padding-bottom: 8px;
+    margin-bottom: 6px;
+  }
+  .p1-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid #0f172a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+  }
+  .p1-title-block h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    color: #0f172a;
+    text-transform: uppercase;
+  }
+  .p1-title-block .subtitle {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1d4ed8;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .p1-contact-info {
+    font-size: 9.3px;
+    line-height: 1.48;
+    color: #334155;
+    text-align: right;
+  }
+  .p1-contact-info a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .p1-contact-info strong {
+    color: #0f172a;
+  }
+
+  /* Full-width Banner */
+  .p1-banner {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 3px;
+    padding: 3.5px 12px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin-bottom: 5px;
+  }
+
+  /* Career Objective */
+  .p1-objective {
+    border-bottom: 1.5px solid #e2e8f0;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+  }
+  .p1-objective-title {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin-bottom: 2px;
+  }
+  .p1-objective-p {
+    font-size: 9.3px;
+    line-height: 1.42;
+    color: #334155;
+    text-align: justify;
+  }
+
+  /* Page 1 Two Columns */
+  .p1-body {
+    display: flex;
+    gap: 16px;
+  }
+  .p1-left {
+    width: 326px;
+    flex-shrink: 0;
+    border-right: 1.5px solid #e2e8f0;
+    padding-right: 14px;
+  }
+  .p1-right {
+    width: 400px;
+    flex-grow: 1;
+  }
+
+  .section-bar {
+    font-size: 11.2px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #0f172a;
+    text-align: center;
+    border-bottom: 2px solid #0f172a;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+
+  /* Skill Categories */
+  .skill-cat {
+    margin-bottom: 7.5px;
+  }
+  .skill-cat:last-child {
+    margin-bottom: 0;
+  }
+  .skill-cat-title {
+    font-size: 9.8px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2.5px;
+    padding-bottom: 1px;
+    border-bottom: 1px dashed #cbd5e1;
+  }
+  .skill-bullets {
+    list-style: none;
+  }
+  .skill-bullets li {
+    font-size: 9.0px;
+    line-height: 1.37;
+    color: #334155;
+    margin-bottom: 2.2px;
+    position: relative;
+    padding-left: 10px;
+  }
+  .skill-bullets li:last-child {
+    margin-bottom: 0;
+  }
+  .skill-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0f172a;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .skill-bullets li strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  /* Job Experience */
+  .job-block {
+    margin-bottom: 8.5px;
+  }
+  .job-block:last-child {
+    margin-bottom: 0;
+  }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5px;
+  }
+  .job-company {
+    font-size: 11.4px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .job-dates {
+    font-size: 9.8px;
+    font-weight: 700;
+    color: #1d4ed8;
+  }
+  .job-role {
+    font-size: 10.2px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 2.8px;
+  }
+  .job-bullets {
+    list-style: none;
+  }
+  .job-bullets li {
+    font-size: 9.0px;
+    line-height: 1.37;
+    color: #334155;
+    margin-bottom: 2.2px;
+    position: relative;
+    padding-left: 10px;
+    text-align: justify;
+  }
+  .job-bullets li:last-child {
+    margin-bottom: 0;
+  }
+  .job-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0f172a;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .job-bullets li strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  /* ================= PAGE 2 ================= */
+  .p2-body {
+    display: flex;
+    gap: 16px;
+  }
+  .p2-left {
+    width: 326px;
+    flex-shrink: 0;
+    border-right: 1.5px solid #e2e8f0;
+    padding-right: 14px;
+  }
+  .p2-right {
+    width: 400px;
+    flex-grow: 1;
+  }
+
+  /* Problem Solving & Competencies */
+  .p2-comp-group {
+    margin-bottom: 6px;
+  }
+  .p2-comp-title {
+    font-size: 9.8px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2px;
+    padding-bottom: 1px;
+    border-bottom: 1px dashed #cbd5e1;
+  }
+  .p2-comp-bullets {
+    list-style: none;
+  }
+  .p2-comp-bullets li {
+    font-size: 8.8px;
+    line-height: 1.33;
+    color: #334155;
+    margin-bottom: 1.8px;
+    position: relative;
+    padding-left: 9px;
+    text-align: justify;
+  }
+  .p2-comp-bullets li:last-child {
+    margin-bottom: 0;
+  }
+  .p2-comp-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0f172a;
+    font-weight: bold;
+    font-size: 9.5px;
+  }
+  .p2-comp-bullets li strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  /* Education & Language Boxes */
+  .p2-edu-box {
+    margin-top: 8px;
+    padding-top: 5px;
+    border-top: 1.5px solid #e5e7eb;
+  }
+  .p2-edu-head {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin-bottom: 2.5px;
+  }
+  .p2-edu-year {
+    font-size: 9.5px;
+    font-weight: 700;
+    color: #1d4ed8;
+    margin-bottom: 1px;
+  }
+  .p2-edu-degree {
+    font-size: 9.8px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1px;
+  }
+  .p2-edu-inst {
+    font-size: 8.9px;
+    color: #475569;
+    line-height: 1.32;
+  }
+
+  .p2-lang-box {
+    margin-top: 7px;
+    padding-top: 5px;
+    border-top: 1.5px solid #e5e7eb;
+    font-size: 8.9px;
+    line-height: 1.45;
+  }
+  .p2-lang-head {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin-bottom: 2.5px;
+  }
+  .p2-lang-box div:not(.p2-lang-head) {
+    margin-bottom: 2px;
+  }
+
+  .p2-links-box {
+    margin-top: 7px;
+    padding-top: 5px;
+    border-top: 1.5px solid #e5e7eb;
+    font-size: 8.9px;
+    line-height: 1.45;
+  }
+  .p2-links-head {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin-bottom: 2.5px;
+  }
+  .p2-links-box div:not(.p2-links-head) {
+    margin-bottom: 2px;
+  }
+  .p2-links-box a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Projects */
+  .proj-card {
+    margin-bottom: 5px;
+  }
+  .proj-card:last-child {
+    margin-bottom: 0;
+  }
+  .proj-name {
+    font-size: 10.8px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.2;
+  }
+  .proj-stack {
+    font-size: 8.8px;
+    color: #0f172a;
+    margin-top: 1px;
+    margin-bottom: 1.5px;
+  }
+  .proj-stack strong {
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .proj-bullets {
+    list-style: none;
+  }
+  .proj-bullets li {
+    font-size: 8.7px;
+    line-height: 1.33;
+    color: #334155;
+    margin-bottom: 1.5px;
+    position: relative;
+    padding-left: 9px;
+    text-align: justify;
+  }
+  .proj-bullets li:last-child {
+    margin-bottom: 0;
+  }
+  .proj-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0f172a;
+    font-weight: bold;
+    font-size: 9.5px;
+  }
+  .proj-bullets li strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<div class="page">
+  <!-- Header with Photo -->
+  <div class="p1-header">
+    <div class="p1-brand">
+      <img src="file:///Users/macbookair/hrshanto807/assets/images/profile.jpg" alt="Hasibur Rahman Shanto" class="profile-photo">
+      <div class="p1-title-block">
+        <h1>HASIBUR RAHMAN<br>SHANTO</h1>
+        <div class="subtitle">FULL-STACK SOFTWARE DEVELOPER (LARAVEL)</div>
+      </div>
+    </div>
+    <div class="p1-contact-info">
+      <div><strong>Location:</strong> Dhaka, Bangladesh</div>
+      <div><strong>Email:</strong> Shantorhaman81@gmail.com</div>
+      <div><strong>Phone:</strong> +88015-8180-7070</div>
+      <div><strong>Portfolio:</strong> <a href="https://hrshanto.vercel.app">https://hrshanto.vercel.app</a></div>
+    </div>
+  </div>
+
+  <!-- Role Banner -->
+  <div class="p1-banner">SENIOR FULL-STACK SOFTWARE DEVELOPER</div>
+
+  <!-- Career Objective -->
+  <div class="p1-objective">
+    <div class="p1-objective-title">CAREER OBJECTIVE</div>
+    <p class="p1-objective-p">
+      Experienced Full-Stack Software Developer with <strong>4+ years</strong> of hands-on expertise architecting, developing, and deploying enterprise-grade multi-tenant SaaS ERPs, automated billing engines, and high-concurrency web platforms. Core engineering revolves around <strong>PHP</strong>, <strong>Laravel</strong>, <strong>MySQL</strong>, <strong>Redis</strong>, <strong>Livewire</strong>, and containerized <strong>Docker/Linux VPS</strong> environments. Specialized in high-performance database indexing, complex query tuning via EXPLAIN, automated queue scaling, and secure multi-payment gateway integrations to build resilient, maintainable software systems.
+    </p>
+  </div>
+
+  <!-- Body (Two Columns) -->
+  <div class="p1-body">
+    <!-- Left Column: Skills -->
+    <div class="p1-left">
+      <div class="section-bar">TECHNICAL SKILLS & EXPERTISE</div>
+
+      <!-- Category 1 -->
+      <div class="skill-cat">
+        <div class="skill-cat-title">Backend Architecture & Frameworks:</div>
+        <ul class="skill-bullets">
+          <li><strong>Modern PHP:</strong> OOP architecture, strict typing, attributes, enums, and SOLID principles.</li>
+          <li><strong>Enterprise Laravel:</strong> Queue Workers, Horizon, Event Listeners, Observers & Notifications.</li>
+          <li><strong>Design Patterns:</strong> Repository & Service patterns, Action classes, and Form Requests.</li>
+          <li><strong>Multi-Tenancy:</strong> Tenant database isolation, company subdomain routing, and tenant migrations.</li>
+          <li><strong>Asynchronous Architecture:</strong> Event-driven architecture, background jobs, and scheduled cron tasks.</li>
+          <li><strong>API Development:</strong> Versioned REST APIs, OAuth2, Laravel Sanctum, and JWT authentication.</li>
+        </ul>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="skill-cat">
+        <div class="skill-cat-title">Database & High-Concurrency Caching:</div>
+        <ul class="skill-bullets">
+          <li><strong>MySQL Optimization:</strong> Schema design, composite indexing, EXPLAIN plans & query profiling.</li>
+          <li><strong>Transactions & Locking:</strong> Row-level locking (FOR UPDATE), deadlock resolution & double-entry.</li>
+          <li><strong>Redis In-Memory:</strong> High-speed caching, async queues, session stores & Pub/Sub event messaging.</li>
+          <li><strong>Database Reliability:</strong> Automated backup routines, replication awareness & read/write separation.</li>
+          <li><strong>Data Integrity:</strong> Foreign key constraints, soft deletes, polymorphic relations & audit logging.</li>
+          <li><strong>Query Scalability:</strong> Chunked cursor iteration, eager loading, and eliminating N+1 bottlenecks.</li>
+        </ul>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="skill-cat">
+        <div class="skill-cat-title">Frontend & Reactive UI Systems:</div>
+        <ul class="skill-bullets">
+          <li><strong>Reactive Components:</strong> Livewire (Flux UI), Alpine.js, and asynchronous AJAX workflows.</li>
+          <li><strong>Modern Styling:</strong> Tailwind CSS, Bootstrap, custom component layouts & Blade templates.</li>
+          <li><strong>Data Tables & HUDs:</strong> Server-side pagination, real-time multi-column search & export tools.</li>
+          <li><strong>JavaScript Standards:</strong> Modern Vanilla JavaScript, DOM lifecycle & reactive client stores.</li>
+          <li><strong>Client-Side State:</strong> Custom events, reactive data binding, and progressive UI disclosure.</li>
+        </ul>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="skill-cat">
+        <div class="skill-cat-title">DevOps, Linux & Cloud Infrastructure:</div>
+        <ul class="skill-bullets">
+          <li><strong>Containerization:</strong> Docker & Docker Compose architectures for multi-service environments.</li>
+          <li><strong>Linux Administration:</strong> Ubuntu Server setup, Nginx reverse proxy tuning, SSL/TLS & PHP-FPM.</li>
+          <li><strong>Automated CI/CD:</strong> Zero-downtime GitHub Actions deployment pipelines & Git branch controls.</li>
+          <li><strong>Process Daemons:</strong> Supervisor process management keeping Horizon workers and queues resilient.</li>
+          <li><strong>Security & Testing:</strong> Automated PHPUnit test suites, OWASP defense, and server firewall tuning.</li>
+        </ul>
+      </div>
+
+      <!-- Category 5 -->
+      <div class="skill-cat">
+        <div class="skill-cat-title">Integrations & Third-Party Ecosystems:</div>
+        <ul class="skill-bullets">
+          <li><strong>Payment Gateways:</strong> Stripe Connect, SSLCommerz, bKash, and webhook idempotency handling.</li>
+          <li><strong>Document Engines:</strong> DomPDF high-speed dynamic PDF rendering for A4 & thermal slips.</li>
+          <li><strong>Real-Time Systems:</strong> WebSockets, WebRTC live audio/video calling, and real-time chat.</li>
+          <li><strong>Logistics APIs:</strong> Courier logistics APIs (Steadfast, Pathao), instant consignment & tracking.</li>
+          <li><strong>SMS & Notifications:</strong> Bulk SMS gateway integration, transactional email & webhook alerts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Column: Job Experience -->
+    <div class="p1-right">
+      <div class="section-bar">JOB EXPERIENCE</div>
+
+      <!-- Job 1 -->
+      <div class="job-block">
+        <div class="job-head">
+          <div class="job-company">WanIT BD LTD (Dhaka, Bangladesh)</div>
+          <div class="job-dates">2025 - Present</div>
+        </div>
+        <div class="job-role">SR. Software Developer</div>
+        <ul class="job-bullets">
+          <li>Lead backend architecture for high-scale enterprise ERP, inventory, and accounting suites handling high-volume daily transactions.</li>
+          <li>Offloaded heavy report generation and data exports to Redis queue workers, successfully reducing average API response times by <strong>42%</strong>.</li>
+          <li>Architected database schemas with optimized transaction isolation levels, resolving deadlocks and ensuring financial ledger consistency.</li>
+          <li>Implemented secure payment gateways with HMAC webhook signature verification, fraud prevention, and idempotency controls.</li>
+          <li>Configured Dockerized production environments, managed Nginx on Linux VPS, and automated zero-downtime CI/CD via GitHub Actions.</li>
+          <li>Engineered multi-currency invoicing, accounts receivable/payable ledgers, and automated payment reconciliation systems.</li>
+          <li>Designed RESTful microservices consumed by mobile apps and third-party partner portals with strict rate limiting.</li>
+          <li>Architected real-time WebSocket notifications for low-stock triggers, payment confirmations, and system security alerts.</li>
+          <li>Championed coding standards, conducted peer code reviews, and mentored junior developers in writing clean, performant Laravel code.</li>
+        </ul>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="job-block">
+        <div class="job-head">
+          <div class="job-company">Deelko LTD (Dhaka, Bangladesh)</div>
+          <div class="job-dates">2023 - 2025</div>
+        </div>
+        <div class="job-role">Software Developer</div>
+        <ul class="job-bullets">
+          <li>Engineered multi-branch retail POS software featuring barcode scanning, real-time stock balance tracking, and automated receipt printing.</li>
+          <li>Built custom ERP modules automating inventory deductions, inter-warehouse transfers, and maintenance schedules across branches.</li>
+          <li>Developed an alumni directory system with real-time server-side filtering and infinite scrolling using Laravel, Alpine.js, and Tailwind CSS.</li>
+          <li>Optimized legacy MySQL queries through strategic composite indexing, eliminating N+1 query bottlenecks and accelerating page loads.</li>
+          <li>Integrated automated SMS gateways, transactional email notifications, and webhook listeners for order status and security alerts.</li>
+          <li>Integrated third-party courier dispatch APIs with automated consignment booking, barcode labeling, and parcel tracking.</li>
+          <li>Architected scheduled database backup rotators, log pruning routines, and offsite storage archiving.</li>
+          <li>Developed role-based access control (RBAC) permissions matrix covering cashiers, warehouse managers, and executive auditors.</li>
+          <li>Maintained containerized staging and production Linux VPS servers, executing routine server health monitoring and log analysis.</li>
+        </ul>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="job-block">
+        <div class="job-head">
+          <div class="job-company">Softvence Agency (Dhaka, Bangladesh)</div>
+          <div class="job-dates">2022 - 2023</div>
+        </div>
+        <div class="job-role">Laravel Developer</div>
+        <ul class="job-bullets">
+          <li>Built custom web applications for international clients, including booking portals, job marketplaces, and e-commerce platforms with RBAC support.</li>
+          <li>Designed versioned RESTful APIs secured with Laravel Sanctum and JWT authentication consumed by web and mobile frontends.</li>
+          <li>Integrated payment processors, third-party logistics tracking, and automated transactional customer email engines.</li>
+          <li>Refactored monolithic legacy controller codebases into modular Service and Repository layers to improve maintainability.</li>
+          <li>Implemented database seeders, factory mock data generators, and migration pipelines for seamless staging deployment.</li>
+          <li>Collaborated in international Agile teams, actively participating in daily standups, sprint planning, and Git branching workflows.</li>
+          <li>Spearheaded query profiling and database indexing audits, resolving query bottlenecks across multiple client platforms.</li>
+          <li>Developed automated unit and feature test suites using PHPUnit, ensuring zero-regression code releases across continuous iterations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="page">
+  <div class="p2-body">
+    <!-- Left Column: Competencies, Education & Quick Links -->
+    <div class="p2-left">
+      <div class="section-bar">SYSTEM DESIGN & ARCHITECTURE</div>
+
+      <div class="p2-comp-group">
+        <div class="p2-comp-title">System Design & Problem Solving:</div>
+        <ul class="p2-comp-bullets">
+          <li><strong>Database Bottlenecks:</strong> Profile slow queries using EXPLAIN, implement composite indexes, eager loading, and eliminate N+1 bottlenecks.</li>
+          <li><strong>High-Throughput APIs:</strong> Offload heavy computational tasks to Redis queues and Horizon workers, cutting API latency by up to <strong>42%</strong>.</li>
+          <li><strong>Data Concurrency & Locking:</strong> Prevent race conditions and double-spending via row-level locking (SELECT FOR UPDATE) and ACID transactions.</li>
+          <li><strong>Real-Time Synchronization:</strong> Coordinate two-way inventory and ledger sync across POS counters, warehouses, and online channels.</li>
+          <li><strong>Audio/Video & Live Chat:</strong> Architect low-latency WebRTC peer-to-peer calling and WebSocket signaling backed by Redis Pub/Sub.</li>
+          <li><strong>SaaS Multi-Tenancy:</strong> Implement secure multi-tenant architectures featuring tenant database separation and custom subdomain routing.</li>
+          <li><strong>High-Traffic Scalability:</strong> Docker Compose, Nginx load balancing, Horizon autoscaling, and GitHub Actions CI/CD workflows.</li>
+          <li><strong>Resilient Fault Tolerance:</strong> Implement circuit breakers, job retries with exponential backoff, and dead-letter queue monitoring.</li>
+        </ul>
+      </div>
+
+      <div class="p2-comp-group">
+        <div class="p2-comp-title">Domain & Enterprise Expertise:</div>
+        <ul class="p2-comp-bullets">
+          <li><strong>Multi-Branch ERP & POS:</strong> Inventory movements, barcode scanning, procurement, and supplier dues ledger.</li>
+          <li><strong>SaaS Subscription Platforms:</strong> Multi-tenant company isolation, automated recurring billing, and tier feature gates.</li>
+          <li><strong>Accounting & Tax Engines:</strong> Double-entry bookkeeping, state-compliant sales tax classification, and A4/thermal printing.</li>
+          <li><strong>Logistics & Real-Time Fulfillment:</strong> Third-party courier booking, dispatch automation, and webhook parcel tracking.</li>
+          <li><strong>High-Volume BI Reporting:</strong> Real-time analytical dashboards, automated bulk Excel/PDF generation, and audit logging.</li>
+          <li><strong>Manufacturing & Factory Pipelines:</strong> Stage-by-stage work order tracking, vendor procurement, and raw material reconciliation.</li>
+          <li><strong>High-Concurrency Result Engines:</strong> Batch certificate and marksheet compilation handling thousands of concurrent requests.</li>
+        </ul>
+      </div>
+
+      <div class="p2-comp-group">
+        <div class="p2-comp-title">Engineering Standards & Best Practices:</div>
+        <ul class="p2-comp-bullets">
+          <li>Clean Code, SOLID Principles, and Modular Domain-Driven Architecture</li>
+          <li>OWASP Web Security: Input sanitization, CSRF/XSS defense, and granular RBAC</li>
+          <li>Automated Testing: PHPUnit Unit & Feature Test Suites with continuous QA</li>
+          <li>Linux VPS Administration: Nginx reverse proxies, Supervisor, and Docker stacks</li>
+          <li>End-to-End Product Lifecycle Ownership (SDLC) & Zero-Downtime CI/CD</li>
+          <li>Strict API Versioning, JSON Schema validation, and Postman API workspaces</li>
+          <li>Database Migration Integrity: Zero-downtime schema migrations & rollback strategies</li>
+          <li>Git Branching & Code Reviews: Pull request workflows & automated code styling</li>
+        </ul>
+      </div>
+
+      <div class="p2-comp-group">
+        <div class="p2-comp-title">Key Technical Accomplishments:</div>
+        <ul class="p2-comp-bullets">
+          <li><strong>42% Latency Cut:</strong> Redis queue decoupling of heavy financial exports and PDF generation jobs.</li>
+          <li><strong>Zero-Downtime CI/CD:</strong> Fully automated GitHub Actions pipelines with Docker staging validation.</li>
+          <li><strong>10k+ Record Concurrency:</strong> Chunked cursor database streaming preventing memory exhaustion.</li>
+          <li><strong>Automated Tax Compliance:</strong> State-compliant Virginia 6% tax audit engine with Code A vs Resale exempt rules.</li>
+          <li><strong>Real-Time WebRTC Calling:</strong> Sub-second peer-to-peer audio/video streaming with TURN/STUN relay failover.</li>
+        </ul>
+      </div>
+
+      <div class="p2-edu-box">
+        <div class="p2-edu-head">EDUCATION</div>
+        <div class="p2-edu-year">2021</div>
+        <div class="p2-edu-degree">Diploma In Electrical Engineering</div>
+        <div class="p2-edu-inst">Patuakhali Polytechnic Institute &bull; Barisal, Bangladesh</div>
+      </div>
+
+      <div class="p2-lang-box">
+        <div class="p2-lang-head">LANGUAGES</div>
+        <div><strong>English:</strong> Professional Working Proficiency</div>
+        <div><strong>Bengali:</strong> Native Language</div>
+      </div>
+
+      <div class="p2-links-box">
+        <div class="p2-links-head">QUICK LINKS & PROFILES</div>
+        <div><strong>Portfolio:</strong> <a href="https://hrshanto.vercel.app">https://hrshanto.vercel.app</a></div>
+        <div><strong>GitHub:</strong> <a href="https://github.com/hrshanto807">https://github.com/hrshanto807</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/hrsanto">https://linkedin.com/in/hrsanto</a></div>
+      </div>
+    </div>
+
+    <!-- Right Column: Projects -->
+    <div class="p2-right">
+      <div class="section-bar">MY SPECIAL PROJECTS</div>
+
+      <!-- Project 1 -->
+      <div class="proj-card">
+        <div class="proj-name">BNSMSoft - Multi-Tenant SaaS ERP, POS & Business Suite</div>
+        <div class="proj-stack"><strong>Tech:</strong> Laravel, MySQL, Redis, Horizon Queues, Docker, RBAC, Multi-Tenant</div>
+        <ul class="proj-bullets">
+          <li><strong>SaaS & Subscription:</strong> Architected a multi-tenant platform with database isolation, subdomains, and tier-based feature management for each client company.</li>
+          <li><strong>Core ERP Modules:</strong> Developed modules for inventory tracking, sales orders, accounts payable/receivable, multi-currency invoicing, and BI analytics.</li>
+          <li><strong>Background Queues:</strong> Processed background reports and notifications asynchronously via Redis Queues and Horizon; configured automated Docker CI/CD deployment pipelines.</li>
+          <li><strong>Security & RBAC:</strong> Implemented granular role-based permissions, audit logs, and secure tenant data separation across all micro-modules.</li>
+          <li><strong>Financial Auditing:</strong> Built double-entry ledger bookkeeping, customer credit limits, and real-time ledger balance verification.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card">
+        <div class="proj-name">Real-Time Audio/Video Calling & Live Chat</div>
+        <div class="proj-stack"><strong>Tech:</strong> Laravel, WebSockets, WebRTC, Socket.io, Redis, Tailwind CSS</div>
+        <ul class="proj-bullets">
+          <li>Built 1-on-1 WebRTC audio/video calling with custom signaling, ICE candidate exchange, and low-latency screen sharing.</li>
+          <li>Engineered real-time chat supporting active presence status, typing indicators, and delivery receipts using Redis Pub/Sub.</li>
+          <li>Implemented automatic socket reconnection and JWT-authenticated WebSocket connections to secure channel access.</li>
+          <li>Added media stream recording, chat history search, and notification sounds for incoming call alerts.</li>
+          <li><strong>Relay Infrastructure:</strong> Configured TURN/STUN relay servers ensuring high NAT traversal success rates across restrictive firewalls.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-card">
+        <div class="proj-name">Construction Operations & Site Logistics ERP</div>
+        <div class="proj-stack"><strong>Tech:</strong> Laravel, PHP, MySQL, REST APIs, Tailwind CSS, Cloud VPS</div>
+        <ul class="proj-bullets">
+          <li>Built operations hub for managing subcontractors, machinery leasing, site requisitions, inventory transfers, and biometric daily attendance.</li>
+          <li>Developed real-time REST APIs delivering metrics, budget variances, and site safety alerts to mobile applications.</li>
+          <li>Streamlined communication and approval workflows between field supervisors and central warehouse managers.</li>
+          <li>Automated diesel consumption logging, machine maintenance alarms, and site material loss prevention reports.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="proj-card">
+        <div class="proj-name">Manufacturing, Factory Workflow & Inventory ERP</div>
+        <div class="proj-stack"><strong>Tech:</strong> Laravel, PHP, MySQL, Redis, DataTables, Bootstrap</div>
+        <ul class="proj-bullets">
+          <li>Created workflow engine tracking production stages, vendor accounts, raw material procurement, and requisition approvals.</li>
+          <li>Designed database structures automating inventory deductions, inter-warehouse transfers, and maintenance schedules.</li>
+          <li>Built financial dashboards for analyzing production cost variance, with bulk Excel and PDF reporting features.</li>
+          <li>Implemented bill-of-materials (BOM) cost calculations, scrap loss percentage tracking, and vendor rating metrics.</li>
+        </ul>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="proj-card">
+        <div class="proj-name">Omnichannel E-Commerce & Retail POS Sync</div>
+        <div class="proj-stack"><strong>Tech:</strong> Laravel, MySQL, Payment Gateways, REST APIs, Webhooks</div>
+        <ul class="proj-bullets">
+          <li>Synchronized offline retail POS counters with online store inventory in real-time to avoid overselling.</li>
+          <li>Implemented two-way API synchronization to consolidate external channel sales into a unified fulfillment dashboard.</li>
+          <li>Integrated secure multi-payment gateway solutions featuring automated webhook validation and instant refund processing.</li>
+          <li>Built real-time low-stock alerts, reorder recommendations, and multi-location order fulfillment routing.</li>
+          <li><strong>Customer Loyalty & Promos:</strong> Added loyalty reward points engine, discount coupon vouchers, and split-cart checkout support.</li>
+        </ul>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="proj-card">
+        <div class="proj-name">EduTab – School Management & High-Concurrency Result Engine</div>
+        <div class="proj-stack"><strong>Tech:</strong> Laravel, PHP, MySQL, Redis, Queue Workers, GitHub Actions</div>
+        <ul class="proj-bullets">
+          <li>Engineered a comprehensive school management SaaS platform handling student admissions, fee collections, and automated report card generation.</li>
+          <li>Architected a high-concurrency result processing engine capable of generating thousands of transcript marksheets simultaneously.</li>
+          <li>Implemented Redis caching layers and chunked queue processing reducing database load during peak publication traffic by over 60%.</li>
+          <li>Integrated automated SMS notifications for student attendance alerts and fee payment confirmation slips.</li>
+        </ul>
+      </div>
+
+      <!-- Project 7: Order Management & Automated Tax Invoice Engine -->
+      <div class="proj-card">
+        <div class="proj-name">Order Management & Automated Tax Invoice Engine</div>
+        <div class="proj-stack"><strong>Tech:</strong> Laravel, Livewire, MySQL, DomPDF, Tailwind CSS, REST APIs</div>
+        <ul class="proj-bullets">
+          <li>Engineered 4-stage reactive order wizard automating parts sequencing, core deposit accounting, pallet freight, and Gold+ mechanical warranty tiers.</li>
+          <li>Architected high-speed A4 & thermal invoice rendering with Code-128 barcodes, split payment settlements (Card/Check/Cash), and digital signature stamps.</li>
+          <li>Implemented state-compliant Virginia 6% tax audit classification (Taxable Code A vs 0% Resale Exempt) with real-time receivables ledger tracking.</li>
+          <li>Developed RMA returns processing with configurable 20% restocking fee deductions and automated core charge refund credits.</li>
+          <li><strong>High-Speed Catalog Search:</strong> Engineered reactive instant part number lookup across thousands of auto parts with inventory stock indicators.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
