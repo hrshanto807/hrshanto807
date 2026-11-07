@@ -1077,78 +1077,118 @@
             ]
         },
         'multivendor': {
-            title: 'Enterprise Multi-Vendor E-Commerce Platform & Marketplace [14 Production Views]',
-            caption: 'Scalable multi-tenant marketplace ecosystem featuring verified merchant directory, vendor branded storefronts, multi-vendor split cart, automated commission ledger, and multi-courier tracking.',
+            title: 'Enterprise Multi-Vendor E-Commerce Platform & Marketplace [22 Production Views]',
+            caption: 'Scalable multi-tenant marketplace ecosystem featuring verified merchant directory, vendor branded storefronts, multi-vendor split cart, automated commission ledger, and multi-courier tracking across Desktop, Tablet & Mobile.',
             slides: [
                 {
-                    src: 'assets/images/projects/multivendor/01_marketplace_home.png',
-                    device: '01. Multi-Store Marketplace Ecosystem & Discovery Portal',
+                    src: 'assets/images/projects/multivendor/01_marketplace_home_desktop.png',
+                    device: '01. Desktop View (1920×1080) — Marketplace Ecosystem & Discovery Portal',
                     desc: 'High-converting multi-vendor marketplace portal featuring dynamic category mega-menus, featured merchant storefronts, live flash sales ticker, and customer search discovery.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/02_vendor_directory.png',
-                    device: '02. Verified Merchant Directory & Seller Ratings',
-                    desc: 'Centralized vendor discovery directory showcasing verified merchant stores, customer review ratings, total active SKU counts, and direct store entry points.'
+                    src: 'assets/images/projects/multivendor/02_marketplace_home_tablet.png',
+                    device: '02. Tablet View (820×1180) — Responsive Tablet Grid & Touch Header',
+                    desc: 'Optimized touch tablet viewport featuring adaptive multi-tier navigation, promotional banners, quick-access category sliders, and touch-optimized deal feeds.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/03_vendor_storefront.png',
-                    device: '03. Dedicated Merchant Storefront & Catalog',
-                    desc: 'Individual vendor branded storefront with merchant banner, store policies, verified seller badge, category filters, and merchant product showcase.'
+                    src: 'assets/images/projects/multivendor/03_marketplace_home_mobile.png',
+                    device: '03. Mobile View (412×915) — Smartphone Viewport & Native Bottom Navigation',
+                    desc: 'Ultra-fast mobile commerce experience featuring thumb-zone search bar, promotional banner carousels, instant category pills, and floating bottom navigation bar with live cart badge.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/04_become_vendor.png',
-                    device: '04. Multi-Tenant Vendor Onboarding & Registration',
-                    desc: 'Enterprise merchant registration funnel capturing trade license verification, bank payout credentials, commission acceptance, and merchant dashboard provisioning.'
+                    src: 'assets/images/projects/multivendor/04_vendor_directory.png',
+                    device: '04. Desktop View (1920×1080) — Verified Merchant Directory & Seller Ratings',
+                    desc: 'Centralized vendor discovery directory showcasing verified merchant stores, customer review ratings, active SKU counts, category filters, and direct store entry points.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/05_shop_catalog.png',
-                    device: '05. Full-Width Marketplace Catalog & Faceted Filters',
-                    desc: 'Ultra-fast product discovery grid with faceted multi-criteria filtering by merchant, category hierarchy, price range slider, brand tags, and stock availability.'
+                    src: 'assets/images/projects/multivendor/05_vendor_storefront.png',
+                    device: '05. Desktop View (1920×1080) — Dedicated Merchant Storefront & Catalog',
+                    desc: 'Individual vendor branded storefront with merchant profile banner, store policies, verified seller badge, category filters, and merchant product showcase.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/06_category_promotions.png',
-                    device: '06. Promotional Campaigns & Mega Category Showcase',
-                    desc: 'Campaign landing catalog featuring seasonal vendor discount banners, sponsored product placements, and automated deal countdowns.'
+                    src: 'assets/images/projects/multivendor/06_become_vendor.png',
+                    device: '06. Desktop View (1920×1080) — Multi-Tenant Vendor Onboarding & Registration',
+                    desc: 'Enterprise merchant registration funnel highlighting 5% platform commission, automated weekly bank payouts, merchant analytics dashboard, and 3-step onboarding flow.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/07_product_detail.png',
-                    device: '07. SKU Specifications, Multi-Merchant Pricing & Stock',
-                    desc: 'Comprehensive product detail view displaying merchant store linkage, live stock availability, customer ratings, image zoom gallery, and one-click add to cart.'
+                    src: 'assets/images/projects/multivendor/07_shop_catalog_desktop.png',
+                    device: '07. Desktop View (1920×1080) — Full-Width Marketplace Catalog & Faceted Filters',
+                    desc: 'High-throughput product discovery grid with faceted multi-criteria filtering by category hierarchy, price range slider, brand tags, and live stock availability.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/08_product_accordion.png',
-                    device: '08. Technical Specifications & Vendor Return Policies',
-                    desc: 'Faceted technical details modal with verified merchant warranty, return policies, shipping estimations, and verified customer Q&A threads.'
+                    src: 'assets/images/projects/multivendor/08_shop_catalog_mobile.png',
+                    device: '08. Mobile View (412×915) — Mobile Shop Catalog & Instant Touch Grid',
+                    desc: 'Mobile-first product discovery interface featuring two-column product tiles, discount badges, direct Add to Cart triggers, and bottom navigation bar.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/09_cart.png',
-                    device: '09. Multi-Vendor Split Cart & Shipping Engine',
-                    desc: 'Smart shopping cart automatically grouping line items by vendor warehouse, calculating split courier logistics fees, voucher discounts, and order subtotals.'
+                    src: 'assets/images/projects/multivendor/09_category_showcase.png',
+                    device: '09. Desktop View (1920×1080) — Category Directory & Campaign Showcase',
+                    desc: 'Comprehensive visual directory with interactive category category pills, curated high-resolution photography, and sub-category exploration shortcuts.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/10_checkout.png',
-                    device: '10. Multi-Vendor Split Checkout & Payment Gateways',
-                    desc: 'Streamlined checkout interface supporting automated 8.5% platform commission deduction, tokenized payment gateways (bKash, Nagad, Cards), and shipping address verification.'
+                    src: 'assets/images/projects/multivendor/10_product_detail_desktop.png',
+                    device: '10. Desktop View (1920×1080) — SKU Specifications, Multi-Vendor Pricing & Flash Deals',
+                    desc: 'Comprehensive product detail view displaying merchant store linkage, live flash deal countdown timer, variant selectors (size/color), image zoom gallery, and verified seller trust card.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/11_track_order.png',
-                    device: '11. Multi-Courier Real-Time Logistics Tracking',
-                    desc: 'Live customer order lookup displaying multi-vendor parcel milestones, dispatch statuses, courier telemetry, and automated delivery confirmation.'
+                    src: 'assets/images/projects/multivendor/11_product_detail_mobile.png',
+                    device: '11. Mobile View (412×915) — Mobile Product Specification & Express Checkout',
+                    desc: 'Streamlined mobile SKU layout featuring full-width gallery preview, instant Buy Now and Add to Cart actions, seller credentials, and secure payment badges.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/12_wishlist.png',
-                    device: '12. Customer Wishlist & Saved Products Ledger',
-                    desc: 'Personalized customer saved items portal with stock alert notifications, price drop alerts, and one-click transfer to active multi-vendor cart.'
+                    src: 'assets/images/projects/multivendor/12_cart_desktop.png',
+                    device: '12. Desktop View (1920×1080) — Multi-Vendor Split Cart & Automated Shipping Engine',
+                    desc: 'Smart shopping cart automatically grouping line items by vendor warehouse (Ocean Crate, Fashion Hub), calculating split shipping logistics fees, and item subtotals.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/13_compare.png',
-                    device: '13. Side-by-Side SKU Comparison Matrix',
-                    desc: 'Interactive product comparison matrix comparing technical specifications, merchant pricing, warranty terms, and availability across multiple vendors.'
+                    src: 'assets/images/projects/multivendor/13_cart_mobile.png',
+                    device: '13. Mobile View (412×915) — Mobile Split Cart with Sticky Subtotal Bar',
+                    desc: 'Mobile cart interface with per-merchant item segregation, quantity stepper controls, store voucher inputs, and sticky bottom checkout summary.'
                 },
                 {
-                    src: 'assets/images/projects/multivendor/14_auth_portal.png',
-                    device: '14. Multi-Tenant Customer & Vendor Authentication',
-                    desc: 'Secure dual-role authentication gateway with role-based redirection, OTP verification, session rate-limiting, and OAuth credentials.'
+                    src: 'assets/images/projects/multivendor/14_checkout.png',
+                    device: '14. Desktop View (1920×1080) — Multi-Vendor Split Checkout & Payment Gateways',
+                    desc: 'Unified multi-vendor checkout interface supporting guest & registered customer flows, automated multi-merchant shipping calculations, bKash/Nagad/Cards integration, and address verification.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/15_track_order.png',
+                    device: '15. Desktop View (1920×1080) — Real-Time Multi-Courier Logistics & Order Tracking',
+                    desc: 'Live customer order tracking portal displaying parcel milestones (Confirmed, Processing, Quality Check, Dispatched, Delivered), courier telemetry, and status updates.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/16_wishlist.png',
+                    device: '16. Desktop View (1920×1080) — Customer Wishlist & Saved Products Ledger',
+                    desc: 'Personalized customer saved items portal with stock availability indicators, price drop tracking, and one-click item transfer to active split cart.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/17_auth_login.png',
+                    device: '17. Desktop View (1920×1080) — Customer & Merchant Dual-Role Authentication Portal',
+                    desc: 'Secure dual-portal authentication gateway with role-based dashboard redirection, remember-me tokens, password recovery, and SSL encryption.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/18_auth_register.png',
+                    device: '18. Desktop View (1920×1080) — Multi-Tenant Customer & Vendor Registration',
+                    desc: 'Streamlined account creation funnel with phone/email verification, password validation, terms consent, and instant account provisioning.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/19_about_us.png',
+                    device: '19. Desktop View (1920×1080) — Marketplace Enterprise Ecosystem & Company Profile',
+                    desc: 'Corporate overview outlining platform architecture, multi-vendor vendor protection policies, customer fulfillment guarantees, and national logistics infrastructure.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/20_contact_us.png',
+                    device: '20. Desktop View (1920×1080) — Customer Care Desk & Merchant Help Center',
+                    desc: 'Multi-channel support portal featuring interactive inquiry form, vendor onboarding helpline, hotline contact cards, and headquarters geolocation.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/21_faq_support.png',
+                    device: '21. Desktop View (1920×1080) — Interactive FAQ & Multi-Vendor Knowledge Base',
+                    desc: 'Accordion-driven knowledge base covering buyer protection policies, merchant payout timelines, return shipping guidelines, and platform dispute escalation.'
+                },
+                {
+                    src: 'assets/images/projects/multivendor/22_terms_policy.png',
+                    device: '22. Desktop View (1920×1080) — Vendor Agreement, Split Commission Policy & Terms',
+                    desc: 'Comprehensive legal and compliance framework detailing merchant commission structures, intellectual property rights, data privacy protocols, and cancellation policies.'
                 }
             ]
         },
